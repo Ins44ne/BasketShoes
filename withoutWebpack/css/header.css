@@ -1,0 +1,33 @@
+.header__wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.header__slogan {
+  background-color: var(--header_promo_color);
+}
+
+.header__slogan-text {
+  text-align: center;
+  padding: 12px 0;
+  color: var(--text_color2);
+}
+
+.header__menu_wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__menu__list,
+.header__menu__account {
+  display: flex;
+  flex-direction: row;
+}
+
+.header__menu__account {
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}

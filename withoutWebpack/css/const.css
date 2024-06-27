@@ -1,0 +1,25 @@
+:root {
+  --header_promo_color: rgb(74, 76, 108);
+  --text_color1: rgb(24, 24, 24);
+  --text_color2: rgb(244, 244, 244);
+  --text_price_color: rgba(74, 76, 108, 0.5);
+  --border_color1: rgb(124, 126, 162);
+  --border_color2: rgb(159, 162, 109);
+  --border_backgr_color: rgb(119, 121, 78);
+  --promo_price_color: rgb(219, 68, 68);
+}
+
+@font-face {
+  font-family: 'CabinetGroteskComplete';
+  src: url('../fonts/CabinetGrotesk_Complete/Fonts/TTF/CabinetGrotesk-Variable.ttf')
+    format('truetype');
+  font-style: normal;
+  font-weight: normal;
+}
+
+body {
+  font-family: 'CabinetGroteskComplete';
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 700;
+}
