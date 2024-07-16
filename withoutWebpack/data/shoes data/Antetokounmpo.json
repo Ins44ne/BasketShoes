@@ -1,0 +1,106 @@
+{
+  "Antetokounmpo": [
+    {
+      "price": 105.0,
+      "discounted_price": 63.97,
+      "shoe_name": "GiannisFreak4",
+      "shoe_line_name": "GiannisAntetokounmpo",
+      "sizes": [37, 38, 39, 42, 43, 44],
+      "color": "white",
+      "images": [
+        "../../img/sneakers/GiannisAntetokounmpo/GiannisFreak4/giannis-freak-4-0.png",
+        "../../img/sneakers/GiannisAntetokounmpo/GiannisFreak4/giannis-freak-4-1.png",
+        "../../img/sneakers/GiannisAntetokounmpo/GiannisFreak4/giannis-freak-4-2.png",
+        "../../img/sneakers/GiannisAntetokounmpo/GiannisFreak4/giannis-freak-4-3.png",
+        "../../img/sneakers/GiannisAntetokounmpo/GiannisFreak4/giannis-freak-4-4.png",
+        "../../img/sneakers/GiannisAntetokounmpo/GiannisFreak4/giannis-freak-4-5.png",
+        "../../img/sneakers/GiannisAntetokounmpo/GiannisFreak4/giannis-freak-4-6.png"
+      ]
+    },
+    {
+      "price": 140.0,
+      "discounted_price": 74.97,
+      "shoe_name": "GiannisFreak5",
+      "shoe_line_name": "GiannisAntetokounmpo",
+      "sizes": [39, 40, 41, 42, 43, 44, 45],
+      "color": "blue",
+      "images": [
+        "../../img/sneakers/GiannisAntetokounmpo/GiannisFreak5/blue/giannis-freak-5-0blue.png",
+        "../../img/sneakers/GiannisAntetokounmpo/GiannisFreak5/blue/giannis-freak-5-1blue.png",
+        "../../img/sneakers/GiannisAntetokounmpo/GiannisFreak5/blue/giannis-freak-5-2blue.png",
+        "../../img/sneakers/GiannisAntetokounmpo/GiannisFreak5/blue/giannis-freak-5-3blue.png",
+        "../../img/sneakers/GiannisAntetokounmpo/GiannisFreak5/blue/giannis-freak-5-4blue.png",
+        "../../img/sneakers/GiannisAntetokounmpo/GiannisFreak5/blue/giannis-freak-5-5blue.png",
+        "../../img/sneakers/GiannisAntetokounmpo/GiannisFreak5/blue/giannis-freak-5-6blue.png"
+      ]
+    },
+    {
+      "price": 140.0,
+      "discounted_price": 84.97,
+      "shoe_name": "GiannisFreak5",
+      "shoe_line_name": "GiannisAntetokounmpo",
+      "sizes": [36, 37, 38, 43, 44],
+      "color": "red",
+      "images": [
+        "../../img/sneakers/GiannisAntetokounmpo/GiannisFreak5/red/giannis-freak-5-0red.png",
+        "../../img/sneakers/GiannisAntetokounmpo/GiannisFreak5/red/giannis-freak-5-1red.png",
+        "../../img/sneakers/GiannisAntetokounmpo/GiannisFreak5/red/giannis-freak-5-2red.png",
+        "../../img/sneakers/GiannisAntetokounmpo/GiannisFreak5/red/giannis-freak-5-3red.png",
+        "../../img/sneakers/GiannisAntetokounmpo/GiannisFreak5/red/giannis-freak-5-4red.png",
+        "../../img/sneakers/GiannisAntetokounmpo/GiannisFreak5/red/giannis-freak-5-5red.png",
+        "../../img/sneakers/GiannisAntetokounmpo/GiannisFreak5/red/giannis-freak-5-6red.png"
+      ]
+    },
+    {
+      "price": 140.0,
+      "discounted_price": 74.97,
+      "shoe_name": "GiannisFreak5",
+      "shoe_line_name": "GiannisAntetokounmpo",
+      "sizes": [36, 37, 38, 39, 40, 41, 42, 43, 44, 45],
+      "color": "black",
+      "images": [
+        "../../img/sneakers/GiannisAntetokounmpo/GiannisFreak5/black/giannis-freak-5-0black.png",
+        "../../img/sneakers/GiannisAntetokounmpo/GiannisFreak5/black/giannis-freak-5-1black.png",
+        "../../img/sneakers/GiannisAntetokounmpo/GiannisFreak5/black/giannis-freak-5-2black.png",
+        "../../img/sneakers/GiannisAntetokounmpo/GiannisFreak5/black/giannis-freak-5-3black.png",
+        "../../img/sneakers/GiannisAntetokounmpo/GiannisFreak5/black/giannis-freak-5-4black.png",
+        "../../img/sneakers/GiannisAntetokounmpo/GiannisFreak5/black/giannis-freak-5-5black.png",
+        "../../img/sneakers/GiannisAntetokounmpo/GiannisFreak5/black/giannis-freak-5-6black.png"
+      ]
+    },
+    {
+      "price": 90.0,
+      "discounted_price": 69.97,
+      "shoe_name": "GiannisImmortality3",
+      "shoe_line_name": "GiannisAntetokounmpo",
+      "sizes": [40, 41, 43, 44, 45],
+      "color": "blue",
+      "images": [
+        "../../img/sneakers/GiannisAntetokounmpo/GiannisImmortality3/blue/giannis-immortality-3-0blue.png",
+        "../../img/sneakers/GiannisAntetokounmpo/GiannisImmortality3/blue/giannis-immortality-3-1blue.png",
+        "../../img/sneakers/GiannisAntetokounmpo/GiannisImmortality3/blue/giannis-immortality-3-2blue.png",
+        "../../img/sneakers/GiannisAntetokounmpo/GiannisImmortality3/blue/giannis-immortality-3-3blue.png",
+        "../../img/sneakers/GiannisAntetokounmpo/GiannisImmortality3/blue/giannis-immortality-3-4blue.png",
+        "../../img/sneakers/GiannisAntetokounmpo/GiannisImmortality3/blue/giannis-immortality-3-5blue.png",
+        "../../img/sneakers/GiannisAntetokounmpo/GiannisImmortality3/blue/giannis-immortality-3-6blue.png"
+      ]
+    },
+    {
+      "price": 90.0,
+      "discounted_price": 69.97,
+      "shoe_name": "GiannisImmortality3",
+      "shoe_line_name": "GiannisAntetokounmpo",
+      "sizes": [41, 42, 43, 44, 45],
+      "color": "yellow",
+      "images": [
+        "../../img/sneakers/GiannisAntetokounmpo/GiannisImmortality3/yellow/giannis-immortality-3-0yell.png",
+        "../../img/sneakers/GiannisAntetokounmpo/GiannisImmortality3/yellow/giannis-immortality-3-1yell.png",
+        "../../img/sneakers/GiannisAntetokounmpo/GiannisImmortality3/yellow/giannis-immortality-3-2yell.png",
+        "../../img/sneakers/GiannisAntetokounmpo/GiannisImmortality3/yellow/giannis-immortality-3-3yell.png",
+        "../../img/sneakers/GiannisAntetokounmpo/GiannisImmortality3/yellow/giannis-immortality-3-4yell.png",
+        "../../img/sneakers/GiannisAntetokounmpo/GiannisImmortality3/yellow/giannis-immortality-3-5yell.png",
+        "../../img/sneakers/GiannisAntetokounmpo/GiannisImmortality3/yellow/giannis-immortality-3-6yell.png"
+      ]
+    }
+  ]
+}
