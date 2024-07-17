@@ -1,0 +1,42 @@
+{
+  "Tatum": [
+    {
+      "price": 125.0,
+      "discounted_price": 0,
+      "shoe_name": "Tatum 2 'Denim'",
+      "id": "Tatum2",
+      "shoe_line_name": "JaysonTatum",
+      "new": true,
+      "sizes": [39, 40, 41, 42, 43],
+      "color": ["blue", "multicolor"],
+      "images": [
+        "img/sneakers/JaysonTatum/tatum2/tatum-2-denim-0.jpg",
+        "img/sneakers/JaysonTatum/tatum2/tatum-2-denim-1.png",
+        "img/sneakers/JaysonTatum/tatum2/tatum-2-denim-2.jpg",
+        "img/sneakers/JaysonTatum/tatum2/tatum-2-denim-3.jpg",
+        "img/sneakers/JaysonTatum/tatum2/tatum-2-denim-4.jpg",
+        "img/sneakers/JaysonTatum/tatum2/tatum-2-denim-5.jpg",
+        "img/sneakers/JaysonTatum/tatum2/tatum-2-denim-6.jpg"
+      ]
+    },
+    {
+      "price": 120.0,
+      "discounted_price": 90.97,
+      "shoe_name": "Tatum 1 'Arena Fits'",
+      "id": "Tatum1",
+      "shoe_line_name": "JaysonTatum",
+      "new": true,
+      "sizes": [36, 37, 44, 45],
+      "color": ["Sesame"],
+      "images": [
+        "img/sneakers/JaysonTatum/tatum1/tatum-1-arena-fits-0.jpg",
+        "img/sneakers/JaysonTatum/tatum1/tatum-1-arena-fits-1.png",
+        "img/sneakers/JaysonTatum/tatum1/tatum-1-arena-fits-2.jpg",
+        "img/sneakers/JaysonTatum/tatum1/tatum-1-arena-fits-3.jpg",
+        "img/sneakers/JaysonTatum/tatum1/tatum-1-arena-fits-4.jpg",
+        "img/sneakers/JaysonTatum/tatum1/tatum-1-arena-fits-5.png",
+        "img/sneakers/JaysonTatum/tatum1/tatum-1-arena-fits-6.jpg"
+      ]
+    }
+  ]
+}
