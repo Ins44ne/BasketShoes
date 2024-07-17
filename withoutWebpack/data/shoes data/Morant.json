@@ -6,6 +6,7 @@
       "shoe_name": "Ja 1 (Team Bank)",
       "id": "Ja1TeamBankBlack",
       "shoe_line_name": "JaMorant",
+      "new": false,
       "sizes": [36, 37, 38, 39, 40, 41, 42, 43, 44, 45],
       "color": ["black"],
       "images": [
@@ -24,6 +25,7 @@
       "shoe_name": "Ja 1 (Team Bank)",
       "id": "Ja1TeamBankBlue",
       "shoe_line_name": "JaMorant",
+      "new": false,
       "sizes": [36, 37, 38, 39, 40, 41, 42, 43, 44, 45],
       "color": ["blue"],
       "images": [
@@ -42,6 +44,7 @@
       "shoe_name": "Ja 1 (Team Bank)",
       "id": "Ja1TeamBankRed",
       "shoe_line_name": "JaMorant",
+      "new": false,
       "sizes": [36, 37, 38, 39, 40, 41, 42, 43, 44, 45],
       "color": ["red"],
       "images": [
@@ -60,6 +63,7 @@
       "shoe_name": "Ja 1 'Day'",
       "id": "Ja1Day",
       "shoe_line_name": "JaMorant",
+      "new": false,
       "sizes": [36, 37, 38, 39, 40, 41, 42, 43, 44, 45],
       "color": ["orange", "green", "multicolor"],
       "images": [
@@ -78,6 +82,7 @@
       "shoe_name": "Ja 1 'NYx NY'",
       "id": "Ja1NYxNY",
       "shoe_line_name": "JaMorant",
+      "new": false,
       "sizes": [36, 37, 38, 39, 40, 41, 42, 43, 44, 45],
       "color": ["blue", "pink"],
       "images": [
@@ -96,6 +101,7 @@
       "shoe_name": "Ja 1 'WhiteBlack'",
       "id": "Ja1WhiteBlack",
       "shoe_line_name": "JaMorant",
+      "new": false,
       "sizes": [36, 37, 38, 39, 40, 41, 42, 43, 44, 45],
       "color": ["white", "black"],
       "images": [

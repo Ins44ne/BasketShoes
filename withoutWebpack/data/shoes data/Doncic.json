@@ -6,6 +6,7 @@
       "shoe_name": "Luka 3 'Photo Finish'",
       "id": "Luka3",
       "shoe_line_name": "LukaDoncic",
+      "new": true,
       "sizes": [37, 38, 39, 40, 41, 42, 43, 44],
       "color": ["white"],
       "images": [

@@ -6,6 +6,7 @@
       "shoe_name": "KD17 'Sunrise'",
       "id": "KD17Sunrise",
       "shoe_line_name": "KevinDurant",
+      "new": false,
       "sizes": [36, 39, 42, 43, 45],
       "color": ["orange", "white"],
       "images": [
@@ -24,6 +25,7 @@
       "shoe_name": "KD17 x Alchemist",
       "id": "KD17Alchemist",
       "shoe_line_name": "KevinDurant",
+      "new": true,
       "sizes": [38, 39, 40, 41, 42, 43, 44],
       "color": ["orange", "white"],
       "images": [
@@ -42,6 +44,7 @@
       "shoe_name": "KD17 x Metro Boomin",
       "id": "KD17MetroBoomin",
       "shoe_line_name": "KevinDurant",
+      "new": false,
       "sizes": [38, 42, 43, 44],
       "color": ["black", "grape", "multicolor"],
       "images": [
@@ -60,6 +63,7 @@
       "shoe_name": "KD16 ASW",
       "id": "KD16ASW",
       "shoe_line_name": "KevinDurant",
+      "new": false,
       "sizes": [38, 41, 42, 43, 44, 45],
       "color": ["green", "pink", "multicolor"],
       "images": [

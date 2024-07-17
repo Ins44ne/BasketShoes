@@ -6,6 +6,7 @@
       "shoe_name": "Tatum 2 'Denim'",
       "id": "Tatum2",
       "shoe_line_name": "JaysonTatum",
+      "new": true,
       "sizes": [39, 40, 41, 42, 43],
       "color": ["blue", "multicolor"],
       "images": [
@@ -24,6 +25,7 @@
       "shoe_name": "Tatum 1 'Arena Fits'",
       "id": "Tatum1",
       "shoe_line_name": "JaysonTatum",
+      "new": false,
       "sizes": [36, 37, 44, 45],
       "color": ["Sesame"],
       "images": [

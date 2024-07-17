@@ -42,6 +42,7 @@
       "shoe_name": "Sabrina 2 'Conductor'",
       "id": "Sabrina2Conductor",
       "shoe_line_name": "SabrinaIonescu",
+      "new": true,
       "sizes": [36, 37, 38, 39, 40, 41, 42, 43],
       "color": ["white", "blue", "gray"],
       "images": [
@@ -60,6 +61,7 @@
       "shoe_name": "Sabrina 2 'Court Vision'",
       "id": "Sabrina2CourtVision",
       "shoe_line_name": "SabrinaIonescu",
+      "new": true,
       "sizes": [39, 40, 43],
       "color": ["black", "grape"],
       "images": [

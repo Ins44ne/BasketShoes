@@ -6,6 +6,7 @@
       "shoe_name": "Giannis Freak 4",
       "id": "GiannisFreak4",
       "shoe_line_name": "GiannisAntetokounmpo",
+      "new": false,
       "sizes": [37, 38, 39, 42, 43, 44],
       "color": ["white"],
       "images": [
@@ -24,6 +25,7 @@
       "shoe_name": "Giannis Freak 5",
       "id": "GiannisFreak5Blue",
       "shoe_line_name": "GiannisAntetokounmpo",
+      "new": true,
       "sizes": [39, 40, 41, 42, 43, 44, 45],
       "color": ["blue", "white"],
       "images": [
@@ -42,6 +44,7 @@
       "shoe_name": "Giannis Freak 5",
       "id": "GiannisFreak5Red",
       "shoe_line_name": "GiannisAntetokounmpo",
+      "new": true,
       "sizes": [36, 37, 38, 43, 44],
       "color": ["red", "white"],
       "images": [
@@ -60,6 +63,7 @@
       "shoe_name": "Giannis Freak 5",
       "id": "GiannisFreak5Black",
       "shoe_line_name": "GiannisAntetokounmpo",
+      "new": true,
       "sizes": [36, 37, 38, 39, 40, 41, 42, 43, 44, 45],
       "color": ["black"],
       "images": [
@@ -78,6 +82,7 @@
       "shoe_name": "Giannis Immortality 3",
       "id": "GiannisImmortality3Blue",
       "shoe_line_name": "GiannisAntetokounmpo",
+      "new": false,
       "sizes": [40, 41, 43, 44, 45],
       "color": ["blue"],
       "images": [
@@ -96,6 +101,7 @@
       "shoe_name": "Giannis Immortality 3",
       "id": "GiannisImmortality3Yellow",
       "shoe_line_name": "GiannisAntetokounmpo",
+      "new": false,
       "sizes": [41, 42, 43, 44, 45],
       "color": ["yellow", "green"],
       "images": [

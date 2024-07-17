@@ -6,6 +6,7 @@
       "shoe_name": "Zion 3 'Orchid' SE",
       "id": "Zion3Orchid",
       "shoe_line_name": "ZionWilliamson",
+      "new": false,
       "sizes": [39, 40, 41, 42, 43],
       "color": ["plum"],
       "images": [
@@ -24,6 +25,7 @@
       "shoe_name": "Zion 3 'Rising'",
       "id": "Zion3Rising",
       "shoe_line_name": "ZionWilliamson",
+      "new": true,
       "sizes": [36, 39, 40, 41, 42, 43, 44, 45],
       "color": ["coral", "blue", "multicolor"],
       "images": [
@@ -42,6 +44,7 @@
       "shoe_name": "Zion 3 'Z-3D'",
       "id": "Zion3Z3D",
       "shoe_line_name": "ZionWilliamson",
+      "new": true,
       "sizes": [36, 37, 38, 39, 40, 42, 43, 44, 45],
       "color": ["white", "black", "multicolor"],
       "images": [
@@ -60,6 +63,7 @@
       "shoe_name": "Zion 3",
       "id": "Zion3White",
       "shoe_line_name": "ZionWilliamson",
+      "new": false,
       "sizes": [38, 39, 40, 41, 42, 43, 44],
       "color": ["white"],
       "images": [
@@ -78,6 +82,7 @@
       "shoe_name": "Zion 3",
       "id": "Zion3Black",
       "shoe_line_name": "ZionWilliamson",
+      "new": false,
       "sizes": [37, 39, 40, 41, 42, 43],
       "color": ["black", "white"],
       "images": [
