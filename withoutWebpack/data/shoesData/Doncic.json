@@ -1,0 +1,23 @@
+{
+  "Doncic": [
+    {
+      "price": 130.0,
+      "discounted_price": 0,
+      "shoe_name": "Luka 3 'Photo Finish'",
+      "id": "Luka3",
+      "shoe_line_name": "LukaDoncic",
+      "new": true,
+      "sizes": [37, 38, 39, 40, 41, 42, 43, 44],
+      "color": ["white"],
+      "images": [
+        "img/sneakers/LukaDoncic/luka-3-photo-finish-0.png",
+        "img/sneakers/LukaDoncic/luka-3-photo-finish-1.png",
+        "img/sneakers/LukaDoncic/luka-3-photo-finish-2.png",
+        "img/sneakers/LukaDoncic/luka-3-photo-finish-3.png",
+        "img/sneakers/LukaDoncic/luka-3-photo-finish-4.png",
+        "img/sneakers/LukaDoncic/luka-3-photo-finish-5.png",
+        "img/sneakers/LukaDoncic/luka-3-photo-finish-6.png"
+      ]
+    }
+  ]
+}
