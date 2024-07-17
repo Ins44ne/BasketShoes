@@ -1,0 +1,76 @@
+{
+  "Ionescu": [
+    {
+      "price": 130.0,
+      "discounted_price": 99.97,
+      "shoe_name": "Sabrina 1 'Magnetic'",
+      "id": "Sabrina1Magnetic",
+      "shoe_line_name": "SabrinaIonescu",
+      "sizes": [36, 37, 38, 39, 40, 41, 42, 43],
+      "color": ["white"],
+      "images": [
+        "../../img/sneakers/SabrinaIonescu/Sabrina1/white/sabrina-1-magnetic-0white.png",
+        "../../img/sneakers/SabrinaIonescu/Sabrina1/white/sabrina-1-magnetic-1white.png",
+        "../../img/sneakers/SabrinaIonescu/Sabrina1/white/sabrina-1-magnetic-2white.png",
+        "../../img/sneakers/SabrinaIonescu/Sabrina1/white/sabrina-1-magnetic-3white.png",
+        "../../img/sneakers/SabrinaIonescu/Sabrina1/white/sabrina-1-magnetic-4white.png",
+        "../../img/sneakers/SabrinaIonescu/Sabrina1/white/sabrina-1-magnetic-5white.png",
+        "../../img/sneakers/SabrinaIonescu/Sabrina1/white/sabrina-1-magnetic-6white.png"
+      ]
+    },
+    {
+      "price": 130.0,
+      "discounted_price": 110.97,
+      "shoe_name": "Sabrina 1 'Exclamat!on'",
+      "id": "Exclamat!on",
+      "shoe_line_name": "SabrinaIonescu",
+      "sizes": [36, 38, 40, 41],
+      "color": ["yellow"],
+      "images": [
+        "../../img/sneakers/SabrinaIonescu/Sabrina1/yellow/sabrina-1-exclamaton-0yell.png",
+        "../../img/sneakers/SabrinaIonescu/Sabrina1/yellow/sabrina-1-exclamaton-1yell.png",
+        "../../img/sneakers/SabrinaIonescu/Sabrina1/yellow/sabrina-1-exclamaton-2yell.png",
+        "../../img/sneakers/SabrinaIonescu/Sabrina1/yellow/sabrina-1-exclamaton-3yell.png",
+        "../../img/sneakers/SabrinaIonescu/Sabrina1/yellow/sabrina-1-exclamaton-4yell.png",
+        "../../img/sneakers/SabrinaIonescu/Sabrina1/yellow/sabrina-1-exclamaton-5yell.png",
+        "../../img/sneakers/SabrinaIonescu/Sabrina1/yellow/sabrina-1-exclamaton-6yell.png"
+      ]
+    },
+    {
+      "price": 130.0,
+      "discounted_price": 0,
+      "shoe_name": "Sabrina 2 'Conductor'",
+      "id": "Sabrina2Conductor",
+      "shoe_line_name": "SabrinaIonescu",
+      "sizes": [36, 37, 38, 39, 40, 41, 42, 43],
+      "color": ["white", "blue", "gray"],
+      "images": [
+        "../../img/sneakers/SabrinaIonescu/Sabrina2/Conductor/sabrina-2-conductor-0.png",
+        "../../img/sneakers/SabrinaIonescu/Sabrina2/Conductor/sabrina-2-conductor-1.png",
+        "../../img/sneakers/SabrinaIonescu/Sabrina2/Conductor/sabrina-2-conductor-2.png",
+        "../../img/sneakers/SabrinaIonescu/Sabrina2/Conductor/sabrina-2-conductor-3.png",
+        "../../img/sneakers/SabrinaIonescu/Sabrina2/Conductor/sabrina-2-conductor-4.png",
+        "../../img/sneakers/SabrinaIonescu/Sabrina2/Conductor/sabrina-2-conductor-5.png",
+        "../../img/sneakers/SabrinaIonescu/Sabrina2/Conductor/sabrina-2-conductor-6.png"
+      ]
+    },
+    {
+      "price": 100.0,
+      "discounted_price": 0,
+      "shoe_name": "Sabrina 2 'Court Vision'",
+      "id": "Sabrina2CourtVision",
+      "shoe_line_name": "SabrinaIonescu",
+      "sizes": [39, 40, 43],
+      "color": ["black", "grape"],
+      "images": [
+        "../../img/sneakers/SabrinaIonescu/Sabrina2/courtVision/sabrina-2-court-vision-0.jpg",
+        "../../img/sneakers/SabrinaIonescu/Sabrina2/courtVision/sabrina-2-court-vision-1.png",
+        "../../img/sneakers/SabrinaIonescu/Sabrina2/courtVision/sabrina-2-court-vision-2.png",
+        "../../img/sneakers/SabrinaIonescu/Sabrina2/courtVision/sabrina-2-court-vision-3.jpg",
+        "../../img/sneakers/SabrinaIonescu/Sabrina2/courtVision/sabrina-2-court-vision-4.png",
+        "../../img/sneakers/SabrinaIonescu/Sabrina2/courtVision/sabrina-2-court-vision-5.png",
+        "../../img/sneakers/SabrinaIonescu/Sabrina2/courtVision/sabrina-2-court-vision-6.jpg"
+      ]
+    }
+  ]
+}

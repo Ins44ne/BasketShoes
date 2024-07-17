@@ -1,0 +1,76 @@
+{
+  "Durant": [
+    {
+      "price": 150.0,
+      "discounted_price": 0,
+      "shoe_name": "KD17 'Sunrise'",
+      "id": "KD17Sunrise",
+      "shoe_line_name": "KevinDurant",
+      "sizes": [36, 39, 42, 43, 45],
+      "color": ["orange", "white"],
+      "images": [
+        "../../img/sneakers/KevinDurant/KD17/Sunrise/kd17-sunrise-0.png",
+        "../../img/sneakers/KevinDurant/KD17/Sunrise/kd17-sunrise-1.png",
+        "../../img/sneakers/KevinDurant/KD17/Sunrise/kd17-sunrise-2.png",
+        "../../img/sneakers/KevinDurant/KD17/Sunrise/kd17-sunrise-3.png",
+        "../../img/sneakers/KevinDurant/KD17/Sunrise/kd17-sunrise-4.png",
+        "../../img/sneakers/KevinDurant/KD17/Sunrise/kd17-sunrise-5.png",
+        "../../img/sneakers/KevinDurant/KD17/Sunrise/kd17-sunrise-6.png"
+      ]
+    },
+    {
+      "price": 150.0,
+      "discounted_price": 0,
+      "shoe_name": "KD17 x Alchemist",
+      "id": "KD17Alchemist",
+      "shoe_line_name": "KevinDurant",
+      "sizes": [38, 39, 40, 41, 42, 43, 44],
+      "color": ["orange", "white"],
+      "images": [
+        "../../img/sneakers/KevinDurant/KD17/Alchemist/kd17-x-alchemist-0.png",
+        "../../img/sneakers/KevinDurant/KD17/Alchemist/kd17-x-alchemist-1.png",
+        "../../img/sneakers/KevinDurant/KD17/Alchemist/kd17-x-alchemist-2.png",
+        "../../img/sneakers/KevinDurant/KD17/Alchemist/kd17-x-alchemist-3.png",
+        "../../img/sneakers/KevinDurant/KD17/Alchemist/kd17-x-alchemist-4.png",
+        "../../img/sneakers/KevinDurant/KD17/Alchemist/kd17-x-alchemist-5.png",
+        "../../img/sneakers/KevinDurant/KD17/Alchemist/kd17-x-alchemist-6.png"
+      ]
+    },
+    {
+      "price": 160.0,
+      "discounted_price": 0,
+      "shoe_name": "KD17 x Metro Boomin",
+      "id": "KD17MetroBoomin",
+      "shoe_line_name": "KevinDurant",
+      "sizes": [38, 42, 43, 44],
+      "color": ["black", "grape", "multicolor"],
+      "images": [
+        "../../img/sneakers/KevinDurant/KD17/MetroBoomin/kd17-x-metro-boomin-0.png",
+        "../../img/sneakers/KevinDurant/KD17/MetroBoomin/kd17-x-metro-boomin-1.png",
+        "../../img/sneakers/KevinDurant/KD17/MetroBoomin/kd17-x-metro-boomin-2.png",
+        "../../img/sneakers/KevinDurant/KD17/MetroBoomin/kd17-x-metro-boomin-3.png",
+        "../../img/sneakers/KevinDurant/KD17/MetroBoomin/kd17-x-metro-boomin-4.png",
+        "../../img/sneakers/KevinDurant/KD17/MetroBoomin/kd17-x-metro-boomin-5.png",
+        "../../img/sneakers/KevinDurant/KD17/MetroBoomin/kd17-x-metro-boomin-6.png"
+      ]
+    },
+    {
+      "price": 160.0,
+      "discounted_price": 120.97,
+      "shoe_name": "KD16 ASW",
+      "id": "KD16ASW",
+      "shoe_line_name": "KevinDurant",
+      "sizes": [38, 41, 42, 43, 44, 45],
+      "color": ["green", "pink", "multicolor"],
+      "images": [
+        "../../img/sneakers/KevinDurant/KD16 ASW/kd16-asw-0.png",
+        "../../img/sneakers/KevinDurant/KD16 ASW/kd16-asw-1.png",
+        "../../img/sneakers/KevinDurant/KD16 ASW/kd16-asw-2.png",
+        "../../img/sneakers/KevinDurant/KD16 ASW/kd16-asw-3.png",
+        "../../img/sneakers/KevinDurant/KD16 ASW/kd16-asw-4.png",
+        "../../img/sneakers/KevinDurant/KD16 ASW/kd16-asw-5.png",
+        "../../img/sneakers/KevinDurant/KD16 ASW/kd16-asw-6.png"
+      ]
+    }
+  ]
+}
