@@ -3,8 +3,8 @@
   --text_color1: rgb(24, 24, 24);
   --text_color2: rgb(244, 244, 244);
   --text_price_color: rgba(74, 76, 108, 0.5);
-  --border_color1: rgb(124, 126, 162);
-  --border_color2: rgb(159, 162, 109);
+  --button_color: rgb(74, 76, 108);
+  --border_color: rgb(124, 126, 162);
   --border_backgr_color: rgb(119, 121, 78);
   --promo_price_color: rgb(219, 68, 68);
 }
@@ -14,12 +14,56 @@
   src: url('../fonts/CabinetGrotesk_Complete/Fonts/TTF/CabinetGrotesk-Variable.ttf')
     format('truetype');
   font-style: normal;
-  font-weight: normal;
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'CabinetGroteskComplete';
+  src: url('../fonts/CabinetGrotesk_Complete/Fonts/OTF/CabinetGrotesk-Bold.otf')
+    format('opentype');
+  font-style: normal;
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'CabinetGroteskComplete';
+  src: url('../fonts/CabinetGrotesk_Complete/Fonts/OTF/CabinetGrotesk-Extrabold.otf')
+    format('opentype');
+  font-style: normal;
+  font-weight: 900;
 }
 
 body {
+  max-width: 1440px;
+  width: 100vw;
+  margin: 0 auto;
   font-family: 'CabinetGroteskComplete';
   font-size: 16px;
-  line-height: 20px;
   font-weight: 700;
+}
+
+.button {
+  color: var(--text_color2);
+  padding: 1vh 2vw;
+  border: 0.2vw solid var(--border_color);
+  border-radius: 0.3vw;
+  background-color: var(--button_color);
+  transition: 0.7s all;
+}
+
+.old_price {
+  text-decoration: line-through;
+  color: var(--promo_price_color);
+}
+
+.section-text {
+  font-size: 5rem;
+  font-weight: 900;
+  margin-bottom: 85px;
+}
+
+.main-newArrivals,
+.main-brandname,
+.main-services {
+  margin-top: 60px;
 }

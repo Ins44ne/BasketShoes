@@ -1,0 +1,90 @@
+.main-newArrivals {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3vh;
+}
+.main-newArrivals-text-arrows-wrapper {
+}
+
+.main-newArrivals-arrows {
+  display: flex;
+  flex-direction: row;
+  gap: 1vw;
+}
+
+.main-newArrivals-items_wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-between;
+  overflow: hidden;
+  max-width: 1024px;
+}
+
+.main-newArrivals-items-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1vh;
+}
+
+.main-newArrivals-items-item-image {
+  max-width: 270px;
+  max-height: 250px;
+  border-radius: 2vh;
+}
+
+.main-newArrivals-items-item-price-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 1vw;
+}
+
+.main-newArrivals-shopNow {
+  margin: 0 auto;
+}
+
+#brandname_wrapper,
+.main-brandname-item-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.main-brandname-item-wrapper {
+  flex-direction: row;
+  gap: 8px;
+}
+
+.main-brandname-item {
+  width: 100vw;
+  max-height: 542px;
+  height: 100vh;
+  border-radius: 2vh;
+  background-size: cover;
+  background-position: center;
+  position: relative;
+}
+
+.brandname-item1 {
+  max-width: 1442px;
+  max-height: 495px;
+}
+
+.brandname-item2,
+.brandname-item5 {
+  max-width: 885px;
+}
+.brandname-item3,
+.brandname-item4 {
+  max-width: 549px;
+}
+
+.button-brandname {
+  position: absolute;
+  bottom: 3vh;
+  left: calc(50% - 50px);
+}

@@ -1,0 +1,7 @@
+.button:hover {
+  cursor: pointer;
+  color: var(--text_color1);
+  border-color: var(--button_color);
+  background-color: var(--border_color);
+  transition: 0.7s all;
+}

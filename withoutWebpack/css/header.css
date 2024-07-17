@@ -8,6 +8,7 @@
 .header__wrapper {
   display: flex;
   flex-direction: column;
+  z-index: 5;
 }
 
 .header__promo {
@@ -47,12 +48,13 @@
   flex-direction: column;
   align-items: center;
   position: relative;
+  cursor: default;
 }
 
 .header__slogan-title {
-  font-size: 450px;
+  font-size: 350px;
   font-weight: 900;
-  line-height: 430px;
+  line-height: 400px;
   text-transform: uppercase;
   color: var(--text_price_color);
   font-family: 'Teko', sans-serif;
@@ -62,8 +64,8 @@
 
 .header__slogan-image {
   position: absolute;
-  max-width: 550px;
-  top: -10vh;
+  max-width: 450px;
+  top: -5vh;
   perspective: 1000px;
 }
 
