@@ -5,6 +5,11 @@
   gap: 3vh;
 }
 .main-newArrivals-text-arrows-wrapper {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  max-width: 1440px;
+  width: 100%;
 }
 
 .main-newArrivals-arrows {
@@ -20,6 +25,7 @@
   justify-content: space-between;
   overflow: hidden;
   max-width: 1024px;
+  gap: 200px;
 }
 
 .main-newArrivals-items-item {
@@ -87,4 +93,38 @@
   position: absolute;
   bottom: 3vh;
   left: calc(50% - 50px);
+}
+
+.main-services-text {
+  display: none;
+}
+
+.main-services-wrapper,
+.main-services-delivery,
+.main-services-service,
+.main-services-moneyback {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 10vw;
+}
+
+.main-services-delivery,
+.main-services-service,
+.main-services-moneyback {
+  flex-direction: column;
+  gap: 0.5vh;
+}
+.main-services-delivery-slogan,
+.main-services-service-slogan,
+.main-services-moneyback-slogan {
+  font-weight: 700;
+  font-size: 24px;
+}
+.main-services-delivery-text,
+.main-services-service-text,
+.main-services-moneyback-text {
+  font-weight: 400;
+  font-size: 16px;
 }
