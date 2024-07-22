@@ -7,6 +7,7 @@
   --border_color: rgb(124, 126, 162);
   --border_backgr_color: rgb(119, 121, 78);
   --promo_price_color: rgb(219, 68, 68);
+  --footer_backgr_color: rgb(51, 51, 51);
 }
 
 @font-face {
@@ -59,11 +60,11 @@ body {
 .section-text {
   font-size: 5rem;
   font-weight: 900;
-  margin-bottom: 85px;
+  margin-bottom: 3vh;
 }
 
 .main-newArrivals,
 .main-brandname,
 .main-services {
-  margin-top: 5vh;
+  margin-top: 3vh;
 }

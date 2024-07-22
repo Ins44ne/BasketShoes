@@ -5,3 +5,20 @@
   background-color: var(--border_color);
   transition: 0.7s all;
 }
+
+.header-slogan-image:hover img {
+  transform: rotateY(15deg) rotateX(15deg);
+}
+
+#facebook:hover #Vector,
+#instagram:hover #Vector,
+#linkedIn:hover #Vector,
+#x:hover #Vector,
+#youtube:hover #Vector {
+  fill: var(--border_backgr_color);
+}
+
+.footer-contacts-phone:hover,
+.footer-contacts-mail:hover {
+  color: var(--border_backgr_color);
+}
