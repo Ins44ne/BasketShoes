@@ -1,9 +1,8 @@
 import { fetchShoesData, dataArray } from './fetchShoesData.js'
 
-const newArrBlock = document.getElementById('newArrivalsWrapper')
-
 async function displayNewArrivals() {
   await fetchShoesData()
+  const newArrBlock = document.getElementById('newArrivalsWrapper')
 
   dataArray.forEach((data) => {
     Object.values(data).forEach((shoes) => {
