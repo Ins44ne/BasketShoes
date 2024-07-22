@@ -18,6 +18,10 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   loadHtml('./pages/components/header.html', 'header')
+  loadSvg('./img/icons/header/account/cart.svg', 'fav')
+  loadSvg('./img/icons/header/account/fav.svg', 'cart')
+  loadSvg('./img/icons/header/account/login.svg', 'account')
+
   loadHtml('./pages/components/footer.html', 'footer')
   loadSvg('./img/icons/footer/facebook.svg', 'facebook')
   loadSvg('./img/icons/footer/instagram.svg', 'instagram')
