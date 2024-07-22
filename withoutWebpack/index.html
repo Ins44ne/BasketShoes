@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Teko:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/withoutWebpack/css/reset.css">
     <link rel="stylesheet" href="/withoutWebpack/css/const.css">
-    <link rel="stylesheet" href="/withoutWebpack/css/hovers.css">
+    <link rel="stylesheet" href="/withoutWebpack/css/hovers_animations.css">
     <link rel="stylesheet" href="/withoutWebpack/css/header.css">
     <link rel="stylesheet" href="/withoutWebpack/css/footer.css">
     <link rel="stylesheet" href="/withoutWebpack/css/main.css">
@@ -24,7 +24,7 @@
             <div class="main-newArrivals-text-arrows-wrapper">
                 <h2 class="main-newArrivals-text section-text">New Arrivals</h2>
                 <div class="main-newArrivals-arrows">
-                    <div class="main-newArrivals-arrows-left_wrapper">
+                    <div class="main-newArrivals-arrows-left_wrapper" id="left-arrow">
                         <div class="main-newArrivals-arrows-left_text">PREV</div>
                         <div class="main-newArrivals-arrows-left_arrow">
                             <svg width="59.000000" height="12.000000" viewBox="0 0 59 12" fill="none"
@@ -37,7 +37,7 @@
 
                         </div>
                     </div>
-                    <div class="main-newArrivals-arrows-right_wrapper">
+                    <div class="main-newArrivals-arrows-right_wrapper" id="right-arrow">
                         <div class="main-newArrivals-arrows-right_text">NEXT</div>
                         <div class="main-newArrivals-arrows-right_arrow">
                             <svg width="59.000000" height="12.000000" viewBox="0 0 59 12" fill="none"
@@ -76,12 +76,12 @@
                                 </clipPath>
                             </defs>
                             <rect id="Services" width="80.000000" height="80.000000" fill="#FFFFFF" fill-opacity="0" />
-                            <g opacity="0.300000">
-                                <path id="Ellipse 6"
+                            <g class="svg_animate animate-svg-1" opacity="0.100000">
+                                <path id="Ellipse6"
                                     d="M77.96 27.42C75.11 18.8 69.32 11.09 61 5.95C53.27 1.19 43.88 -1 34.2 0.43C25.22 1.74 16.62 6.09 10.12 13.41C4.08 20.19 0.3 29.05 0.02 38.83C-0.25 47.91 2.55 57.13 8.62 64.79C14.25 71.92 22.32 77.19 31.9 79.16C40.8 81 50.36 79.85 58.97 75.2C66.97 70.89 73.55 63.86 77.16 54.76C80.52 46.33 81.04 36.7 77.96 27.42ZM35.78 11.22C42.32 10.25 49.22 11.5 55.27 15.24C60.89 18.71 65.38 24.09 67.61 30.85C69.69 37.12 69.66 44.13 67.02 50.74C64.59 56.88 60.06 62.23 53.8 65.6C47.98 68.74 41.08 69.93 34.11 68.48C27.64 67.15 21.58 63.62 17.18 58.03C13.08 52.85 10.71 46.26 10.92 39.14C11.11 32.54 13.53 25.97 18.27 20.66C22.66 15.72 28.74 12.24 35.78 11.22Z"
                                     fill="#2F2E30" fill-opacity="1.000000" fill-rule="evenodd" />
                             </g>
-                            <circle id="Ellipse 5" cx="40.000000" cy="40.000000" r="29.000000" fill="#181818"
+                            <circle id="Ellipse5" cx="40.000000" cy="40.000000" r="29.000000" fill="#181818"
                                 fill-opacity="1.000000" />
                             <rect id="icon-delivery" width="40.000000" height="40.000000"
                                 transform="translate(20.000000 20.000000)" fill="#FFFFFF" fill-opacity="0" />
@@ -126,12 +126,12 @@
                                 </clipPath>
                             </defs>
                             <rect id="Services" width="80.000000" height="80.000000" fill="#FFFFFF" fill-opacity="0" />
-                            <g opacity="0.300000">
-                                <path id="Ellipse 6"
+                            <g class="svg_animate animate-svg-2" opacity="0.100000">
+                                <path id="Ellipse6"
                                     d="M77.96 27.42C75.11 18.8 69.32 11.09 61 5.95C53.27 1.19 43.88 -1 34.2 0.43C25.22 1.74 16.62 6.09 10.12 13.41C4.08 20.19 0.3 29.05 0.02 38.83C-0.25 47.91 2.55 57.13 8.62 64.79C14.25 71.92 22.32 77.19 31.9 79.16C40.8 81 50.36 79.85 58.97 75.2C66.97 70.89 73.55 63.86 77.16 54.76C80.52 46.33 81.04 36.7 77.96 27.42ZM35.78 11.22C42.32 10.25 49.22 11.5 55.27 15.24C60.89 18.71 65.38 24.09 67.61 30.85C69.69 37.12 69.66 44.13 67.02 50.74C64.59 56.88 60.06 62.23 53.8 65.6C47.98 68.74 41.08 69.93 34.11 68.48C27.64 67.15 21.58 63.62 17.18 58.03C13.08 52.85 10.71 46.26 10.92 39.14C11.11 32.54 13.53 25.97 18.27 20.66C22.66 15.72 28.74 12.24 35.78 11.22Z"
                                     fill="#2F2E30" fill-opacity="1.000000" fill-rule="evenodd" />
                             </g>
-                            <circle id="Ellipse 5" cx="40.000000" cy="40.000000" r="29.000000" fill="#181818"
+                            <circle id="Ellipse5" cx="40.000000" cy="40.000000" r="29.000000" fill="#181818"
                                 fill-opacity="1.000000" />
                             <g clip-path="url(#clip26_346)">
                                 <path id="Vector"
@@ -161,12 +161,12 @@
                             xmlns:xlink="http://www.w3.org/1999/xlink">
                             <defs />
                             <rect id="Services" width="80.000000" height="80.000000" fill="#FFFFFF" fill-opacity="0" />
-                            <g opacity="0.300000">
-                                <path id="Ellipse 6"
+                            <g class="svg_animate animate-svg-3" opacity="0.100000">
+                                <path id="Ellipse6"
                                     d="M77.96 27.42C75.11 18.8 69.32 11.09 61 5.95C53.27 1.19 43.88 -1 34.2 0.43C25.22 1.74 16.62 6.09 10.12 13.41C4.08 20.19 0.3 29.05 0.02 38.83C-0.25 47.91 2.55 57.13 8.62 64.79C14.25 71.92 22.32 77.19 31.9 79.16C40.8 81 50.36 79.85 58.97 75.2C66.97 70.89 73.55 63.86 77.16 54.76C80.52 46.33 81.04 36.7 77.96 27.42ZM35.78 11.22C42.32 10.25 49.22 11.5 55.27 15.24C60.89 18.71 65.38 24.09 67.61 30.85C69.69 37.12 69.66 44.13 67.02 50.74C64.59 56.88 60.06 62.23 53.8 65.6C47.98 68.74 41.08 69.93 34.11 68.48C27.64 67.15 21.58 63.62 17.18 58.03C13.08 52.85 10.71 46.26 10.92 39.14C11.11 32.54 13.53 25.97 18.27 20.66C22.66 15.72 28.74 12.24 35.78 11.22Z"
                                     fill="#2F2E30" fill-opacity="1.000000" fill-rule="evenodd" />
                             </g>
-                            <circle id="Ellipse 5" cx="40.000000" cy="40.000000" r="29.000000" fill="#181818"
+                            <circle id="Ellipse5" cx="40.000000" cy="40.000000" r="29.000000" fill="#181818"
                                 fill-opacity="1.000000" />
                             <rect id="Icon-secure" width="40.000000" height="40.000000"
                                 transform="translate(20.000000 20.000000)" fill="#FFFFFF" fill-opacity="0" />
