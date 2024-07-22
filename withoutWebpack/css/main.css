@@ -9,7 +9,7 @@
   justify-content: space-between;
   align-items: center;
   max-width: 1440px;
-  width: 100%;
+  width: 99%;
 }
 
 .main-newArrivals-arrows {
@@ -37,6 +37,7 @@
   display: flex;
   flex-direction: column;
   gap: 1vh;
+  cursor: pointer;
 }
 
 .main-newArrivals-items-item-image {
@@ -62,6 +63,7 @@
   justify-content: center;
   align-items: center;
   gap: 8px;
+  width: 100%;
 }
 
 .main-brandname-item-wrapper {
@@ -80,23 +82,27 @@
 }
 
 .brandname-item1 {
-  max-width: 1442px;
+  max-width: 1440px;
   max-height: 495px;
 }
 
 .brandname-item2,
 .brandname-item5 {
-  max-width: 885px;
+  max-width: 883px;
 }
 .brandname-item3,
 .brandname-item4 {
-  max-width: 549px;
+  max-width: 548px;
 }
 
 .button-brandname {
   position: absolute;
   bottom: 3vh;
   left: calc(50% - 50px);
+}
+
+.main-services {
+  margin: 10vh 0;
 }
 
 .main-services-text {
@@ -131,4 +137,10 @@
 .main-services-moneyback-text {
   font-weight: 400;
   font-size: 16px;
+}
+/*
+@media (max-width: 1460px) {
+  .main-brandname-item-wrapper {
+    width: 96vw;
+  }
 }
