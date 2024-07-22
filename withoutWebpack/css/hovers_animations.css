@@ -18,7 +18,38 @@
   fill: var(--border_backgr_color);
 }
 
+#cart:hover #Vector,
+#fav:hover #Vector,
+#account:hover #Vector {
+  stroke: var(--border_backgr_color);
+}
+
 .footer-contacts-phone:hover,
 .footer-contacts-mail:hover {
   color: var(--border_backgr_color);
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0.1;
+  }
+  50% {
+    opacity: 0.7;
+  }
+  100% {
+    opacity: 0.1;
+  }
+}
+
+.svg_animate {
+  animation-name: opacity;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+.animate-svg-1 {
+  animation-delay: 8s;
+}
+.animate-svg-2 {
+  animation-delay: 4s;
 }
