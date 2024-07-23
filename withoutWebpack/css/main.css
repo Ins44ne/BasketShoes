@@ -1,9 +1,52 @@
+#main {
+  margin-top: 170px;
+}
+
+.main-slogan-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  cursor: default;
+}
+
+.main-slogan-title {
+  font-size: 350px;
+  font-weight: 900;
+  line-height: 400px;
+  text-transform: uppercase;
+  color: var(--text_price_color);
+  font-family: 'Teko', sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.main-slogan-image {
+  position: absolute;
+  max-width: 450px;
+  top: -5vh;
+  perspective: 1000px;
+}
+
+.main-slogan-image img {
+  transition: transform 0.9s;
+  transform-style: preserve-3d;
+}
+
+.carousel-container {
+  position: relative;
+  width: 900px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
 .main-newArrivals {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 3vh;
 }
+
 .main-newArrivals-text-arrows-wrapper {
   display: flex;
   justify-content: space-between;
@@ -28,9 +71,7 @@
   flex-direction: row;
   align-items: flex-start;
   justify-content: space-between;
-  overflow: hidden;
-  max-width: 1024px;
-  gap: 200px;
+  gap: 150px;
 }
 
 .main-newArrivals-items-item {
@@ -63,7 +104,7 @@
   justify-content: center;
   align-items: center;
   gap: 8px;
-  width: 100%;
+  width: calc(100% - 8px);
 }
 
 .main-brandname-item-wrapper {
@@ -138,9 +179,131 @@
   font-weight: 400;
   font-size: 16px;
 }
-/*
-@media (max-width: 1460px) {
-  .main-brandname-item-wrapper {
-    width: 96vw;
+
+@media (max-width: 1100px) {
+  .main-brandname-item {
+    max-height: 345px;
+  }
+
+  .main-services-delivery-slogan,
+  .main-services-service-slogan,
+  .main-services-moneyback-slogan {
+    font-size: 16px;
+  }
+
+  .main-services-delivery-text,
+  .main-services-service-text,
+  .main-services-moneyback-text {
+    font-size: 12px;
+  }
+
+  .carousel-container {
+    width: 550px;
+  }
+}
+
+@media (max-width: 768px) {
+  #main {
+    margin-top: 120px;
+  }
+
+  .main-slogan-title {
+    font-size: 250px;
+  }
+
+  .main-slogan-image {
+    position: absolute;
+    max-width: 350px;
+    top: 0vh;
+  }
+
+  .section-text {
+    font-size: 3rem;
+  }
+
+  .main-brandname-item {
+    max-height: 215px;
+  }
+
+  .main-services-wrapper {
+    gap: 3vw;
+  }
+
+  .main-services-delivery-icon svg,
+  .main-services-service-icon svg,
+  .main-services-moneyback-icon svg {
+    width: 50px;
+    height: 50px;
+  }
+
+  .main-services-delivery-slogan,
+  .main-services-service-slogan,
+  .main-services-moneyback-slogan {
+    font-size: 14px;
+  }
+
+  .main-services-delivery-text,
+  .main-services-service-text,
+  .main-services-moneyback-text {
+    font-size: 10px;
+  }
+
+  .carousel-container {
+    width: 200px;
+  }
+}
+
+@media (max-width: 550px) {
+  .main-services {
+    margin: 4vh 0 0;
+  }
+
+  .main-services-wrapper {
+    flex-direction: column;
+  }
+
+  .main-services-delivery-icon svg,
+  .main-services-service-icon svg,
+  .main-services-moneyback-icon svg {
+    display: none;
+  }
+
+  .main-services-delivery-slogan,
+  .main-services-service-slogan,
+  .main-services-moneyback-slogan {
+    font-size: 24px;
+  }
+
+  .main-services-delivery-text,
+  .main-services-service-text,
+  .main-services-moneyback-text {
+    font-size: 16px;
+  }
+
+  .main-brandname-item {
+    max-height: 180px;
+  }
+}
+
+@media (max-width: 460px) {
+  .main-slogan-title {
+    font-size: 150px;
+    line-height: 190px;
+  }
+
+  .main-slogan-image {
+    max-width: 200px;
+  }
+
+  .section-text {
+    font-size: 2rem;
+  }
+
+  .main-newArrivals-text-arrows-wrapper {
+    flex-direction: column;
+  }
+
+  .main-newArrivals-arrows {
+    gap: 15vw;
   }
 }

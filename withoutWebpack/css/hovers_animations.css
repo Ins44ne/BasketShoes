@@ -6,7 +6,7 @@
   transition: 0.7s all;
 }
 
-.header-slogan-image:hover img {
+.main-slogan-image:hover img {
   transform: rotateY(15deg) rotateX(15deg);
 }
 

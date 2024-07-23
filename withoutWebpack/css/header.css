@@ -1,14 +1,14 @@
-/* scrollbar settings */
-#nav {
-  scrollbar-width: thin;
-  scrollbar-color: var(--header_promo_color) var(--text_color2);
+#header {
+  position: fixed;
+  width: 99%;
+  max-width: 1440px;
+  top: 0;
+  z-index: 1000;
 }
-/* scrollbar settings */
 
 .header-wrapper {
   display: flex;
   flex-direction: column;
-  z-index: 5;
 }
 
 .header-promo {
@@ -32,6 +32,7 @@
 .header-menu_wrapper {
   justify-content: space-between;
   align-items: center;
+  background-color: var(--text_color2);
 }
 
 .header-menu-account {
@@ -43,35 +44,4 @@
 .header-menu-account-cart,
 .header-menu-account-login {
   cursor: pointer;
-}
-
-.header-slogan-wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: relative;
-  cursor: default;
-}
-
-.header-slogan-title {
-  font-size: 350px;
-  font-weight: 900;
-  line-height: 400px;
-  text-transform: uppercase;
-  color: var(--text_price_color);
-  font-family: 'Teko', sans-serif;
-  font-optical-sizing: auto;
-  font-style: normal;
-}
-
-.header-slogan-image {
-  position: absolute;
-  max-width: 450px;
-  top: -5vh;
-  perspective: 1000px;
-}
-
-.header-slogan-image img {
-  transition: transform 0.9s;
-  transform-style: preserve-3d;
 }

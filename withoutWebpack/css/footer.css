@@ -45,3 +45,10 @@
 #youtube {
   cursor: pointer;
 }
+
+@media (max-width: 550px) {
+  .footer-wrapper {
+    flex-direction: column;
+    align-items: normal;
+  }
+}
