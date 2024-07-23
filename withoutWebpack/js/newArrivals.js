@@ -1,6 +1,6 @@
 import { fetchShoesData, dataArray } from './fetchShoesData.js'
 
-async function displayNewArrivals() {
+export async function displayNewArrivals() {
   await fetchShoesData()
   const newArrBlock = document.getElementById('newArrivalsWrapper')
 
