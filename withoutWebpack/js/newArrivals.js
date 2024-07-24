@@ -10,6 +10,7 @@ export async function displayNewArrivals() {
         if (shoe.new === true) {
           const shoeCard = document.createElement('div')
           shoeCard.classList.add('main-newArrivals-items-item')
+          shoeCard.id = shoe.id
 
           const shoeImage = document.createElement('img')
           shoeImage.src = shoe.images[0]
