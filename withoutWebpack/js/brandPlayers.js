@@ -21,13 +21,14 @@ function showBrandNames() {
     brandCard.classList.add('main-brandname-item', `brandname-item${i + 1}`)
     brandCard.style.backgroundImage = `url(${backBrandImages[i]})`
 
-    const buttonShop = document.createElement('div')
+    const buttonShop = document.createElement('a')
     buttonShop.classList.add(
       'main-brandname-item-button',
       'button-brandname',
       'button'
     )
     buttonShop.textContent = 'Shop Now'
+    buttonShop.href = './pages/catalog/catalog.html'
     brandCard.appendChild(buttonShop)
 
     if (brandCardWrapper) {
