@@ -1,15 +1,23 @@
 let dataArray = []
 
+const getBasePath = () => {
+  const path = window.location.pathname
+  const depth = path.split('/').length - 3
+  return '../'.repeat(depth)
+}
+
+const basePath = getBasePath()
+
 async function fetchShoesData() {
   const jsonFiles = [
-    './data/shoesData/Antetokounmpo.json',
-    './data/shoesData/Doncic.json',
-    './data/shoesData/Durant.json',
-    './data/shoesData/Ionescu.json',
-    './data/shoesData/Jordan.json',
-    './data/shoesData/Morant.json',
-    './data/shoesData/Tatum.json',
-    './data/shoesData/Williamson.json',
+    `${basePath}data/shoesData/Antetokounmpo.json`,
+    `${basePath}data/shoesData/Doncic.json`,
+    `${basePath}data/shoesData/Durant.json`,
+    `${basePath}data/shoesData/Ionescu.json`,
+    `${basePath}data/shoesData/Jordan.json`,
+    `${basePath}data/shoesData/Morant.json`,
+    `${basePath}data/shoesData/Tatum.json`,
+    `${basePath}data/shoesData/Williamson.json`,
   ]
 
   try {
