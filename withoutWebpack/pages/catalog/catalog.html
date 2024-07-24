@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/const.css">
+    <link rel="stylesheet" href="../../css/header.css">
+    <link rel="stylesheet" href="../../css/footer.css">
+    <title>Catalog</title>
+</head>
+
+<body>
+    <header id="header">
+    </header>
+    <main id="main">
+        <div class="main-wrapper">
+            <section class="main-shoes-wrapper">
+                <div class="main-shoes-header">
+                    <h2 class="main-shoes-header-text">Mens Basketball Shoes <span id="main-shoes-header-number"></span>
+                    </h2>
+                    <div class="main-shoes-header-sort">Sort By
+                        <div class="main-shoes-header-sort-item" id="highLow">Price: High-Low</div>
+                        <div class="main-shoes-header-sort-item" id="lowHigh">Price: Low-High</div>
+                    </div>
+                </div>
+                <div class="main-shoes-field-wrapper">
+                    <div class="main-shoes-field-nav-wrapper">
+                        <div class="main-shoes-field-nav-players-wrapper" id="players-list"></div>
+                        <div class="main-shoes-field-nav-filters-wrapper">
+                            <div class="main-shoes-field-nav-filters-colors-wrapper">Colors</div>
+                            <div class="main-shoes-field-nav-filters-prices-wrapper">Prices</div>
+                            <div class="main-shoes-field-nav-filters-sizes-wrapper">Sizes</div>
+                        </div>
+                    </div>
+                    <div class="main-shoes-field-items-wrapper" id="items-field">
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <footer id="footer"></footer>
+    <div class="footer-under">
+    </div>
+    <script type="module" src="../../js/loaderHTML.js"></script>
+    <script type="module" src="../../js/playersList.js"></script>
+
+</body>
+
+</html>
