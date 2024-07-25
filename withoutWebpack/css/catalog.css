@@ -1,0 +1,123 @@
+#main {
+  margin-top: 120px;
+}
+
+.main-shoes-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+}
+
+.main-shoes-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#items-field {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  max-width: 1100px;
+  margin-left: 250px;
+}
+
+.main-shoes-field-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.main-shoes-field-nav-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+  width: 100%;
+  max-width: 250px;
+  font-size: 20px;
+  position: fixed;
+  z-index: 1000;
+}
+
+.main-shoes-field-nav-players-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.main-players-item {
+  position: relative;
+  cursor: pointer;
+}
+
+.main-players-item:after {
+  display: block;
+  position: absolute;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: var(--border_backgr_color);
+  content: '';
+  transition: width 1s ease-out;
+}
+
+.main-shoes-field-items-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 350px;
+  height: 400px;
+  cursor: pointer;
+  box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.4);
+  transition: all 0.5s ease;
+}
+.main-shoes-field-items-item:hover {
+  border-radius: 0% 0% 50% 50% / 0% 0% 1% 1%;
+  box-shadow: 0px 3px rgba(0, 0, 0, 0.5);
+}
+
+.main-shoes-field-items-item-img {
+  width: 250px;
+}
+
+.main-shoes-field-nav-filters-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.main-shoes-field-nav-filters-colors-wrapper,
+.main-shoes-field-nav-filters-prices-wrapper,
+.main-shoes-field-nav-filters-sizes-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.main-shoes-field-nav-filters-sizes-items-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.main-shoes-field-nav-filters-colors-item,
+.main-shoes-field-nav-filters-prices-items-item,
+.main-shoes-field-nav-filters-sizes-item {
+  cursor: pointer;
+}
+
+.main-shoes-field-nav-filters-sizes-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border: 3px solid var(--border_color);
+  border-radius: 10px;
+}
