@@ -44,6 +44,7 @@ body {
 }
 
 .button {
+  cursor: pointer;
   color: var(--text_color2);
   padding: 1vh 2vw;
   border: 0.2vw solid var(--border_color);
