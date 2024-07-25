@@ -9,8 +9,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Teko:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../../css/reset.css">
     <link rel="stylesheet" href="../../css/const.css">
+    <link rel="stylesheet" href="../../css/hovers_animations.css">
     <link rel="stylesheet" href="../../css/header.css">
     <link rel="stylesheet" href="../../css/footer.css">
+    <link rel="stylesheet" href="../../css/catalog.css">
     <title>Catalog</title>
 </head>
 
@@ -21,9 +23,10 @@
         <div class="main-wrapper">
             <section class="main-shoes-wrapper">
                 <div class="main-shoes-header">
-                    <h2 class="main-shoes-header-text">Mens Basketball Shoes <span id="main-shoes-header-number"></span>
+                    <h2 class="main-shoes-header-text">Basketball Shoes <span id="main-shoes-header-number"></span>
                     </h2>
-                    <div class="main-shoes-header-sort">Sort By
+                    <div class="main-shoes-header-sort-wrapper">
+                        <span class="main-shoes-header-sort-text">Sort By</span> <span class="icon"></span>
                         <div class="main-shoes-header-sort-item" id="highLow">Price: High-Low</div>
                         <div class="main-shoes-header-sort-item" id="lowHigh">Price: Low-High</div>
                     </div>
@@ -32,9 +35,25 @@
                     <div class="main-shoes-field-nav-wrapper">
                         <div class="main-shoes-field-nav-players-wrapper" id="players-list"></div>
                         <div class="main-shoes-field-nav-filters-wrapper">
-                            <div class="main-shoes-field-nav-filters-colors-wrapper">Colors</div>
-                            <div class="main-shoes-field-nav-filters-prices-wrapper">Prices</div>
-                            <div class="main-shoes-field-nav-filters-sizes-wrapper">Sizes</div>
+                            <div class="main-shoes-field-nav-filters-colors-wrapper">
+                                <span class="main-shoes-field-nav-filters-colors-items">Colors</span>
+                                <span class="main-shoes-field-nav-filters-colors-icon"></span>
+                                <div class="main-shoes-field-nav-filters-colors-items-wrapper" id="color-filter"></div>
+                            </div>
+                            <div class="main-shoes-field-nav-filters-prices-wrapper">
+                                <span class="main-shoes-field-nav-filters-prices-items">Prices</span>
+                                <span class="main-shoes-field-nav-filters-prices-icon"></span>
+                                <div class="main-shoes-field-nav-filters-prices-items-wrapper" id="price-filter">
+                                    <div class="main-shoes-field-nav-filters-prices-items-item">0-100</div>
+                                    <div class="main-shoes-field-nav-filters-prices-items-item">100-130</div>
+                                    <div class="main-shoes-field-nav-filters-prices-items-item">130-200</div>
+                                </div>
+                            </div>
+                            <div class="main-shoes-field-nav-filters-sizes-wrapper">
+                                <span class="main-shoes-field-nav-filters-sizes-items">Sizes</span>
+                                <span class="main-shoes-field-nav-filters-sizes-icon"></span>
+                                <div class="main-shoes-field-nav-filters-sizes-items-wrapper" id="size-filter"></div>
+                            </div>
                         </div>
                     </div>
                     <div class="main-shoes-field-items-wrapper" id="items-field">
@@ -48,6 +67,7 @@
     </div>
     <script type="module" src="../../js/loaderHTML.js"></script>
     <script type="module" src="../../js/playersList.js"></script>
+    <script type="module" src="../../js/renderCatalog.js"></script>
 
 </body>
 
