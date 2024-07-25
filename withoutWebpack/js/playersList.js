@@ -1,6 +1,6 @@
 import { fetchShoesData, dataArray } from './fetchShoesData.js'
 
-export async function playerNames() {
+async function playerNames() {
   await fetchShoesData()
   const playersBlock = document.getElementById('players-list')
   const playersSet = new Set()
