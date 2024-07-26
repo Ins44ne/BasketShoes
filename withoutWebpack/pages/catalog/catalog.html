@@ -26,7 +26,10 @@
                     <h2 class="main-shoes-header-text">Basketball Shoes <span id="main-shoes-header-number"></span>
                     </h2>
                     <div class="main-shoes-header-sort-wrapper">
-                        <span class="main-shoes-header-sort-text">Sort By</span> <span class="icon"></span>
+                        <div class="main-shoes-header-sort-items-switcher">
+                            <span class="main-shoes-header-sort-text">Sort By</span> <span
+                                class="main-shoes-header-sort-icon icon-switcher"></span>
+                        </div>
                         <div class="main-shoes-header-sort-item" id="highLow">Price: High-Low</div>
                         <div class="main-shoes-header-sort-item" id="lowHigh">Price: Low-High</div>
                     </div>
@@ -36,13 +39,19 @@
                         <div class="main-shoes-field-nav-players-wrapper" id="players-list"></div>
                         <div class="main-shoes-field-nav-filters-wrapper">
                             <div class="main-shoes-field-nav-filters-colors-wrapper">
-                                <span class="main-shoes-field-nav-filters-colors-items">Colors</span>
-                                <span class="main-shoes-field-nav-filters-colors-icon"></span>
+                                <div class="main-shoes-field-nav-filters-colors-items-switcher">
+                                    <div class="main-shoes-field-nav-filters-colors-items">Colors</div>
+                                    <div class="main-shoes-field-nav-filters-colors-icon icon-switcher"
+                                        id="switch-color"></div>
+                                </div>
                                 <div class="main-shoes-field-nav-filters-colors-items-wrapper" id="color-filter"></div>
                             </div>
                             <div class="main-shoes-field-nav-filters-prices-wrapper">
-                                <span class="main-shoes-field-nav-filters-prices-items">Prices</span>
-                                <span class="main-shoes-field-nav-filters-prices-icon"></span>
+                                <div class="main-shoes-field-nav-filters-prices-items-switcher">
+                                    <div class="main-shoes-field-nav-filters-prices-items">Prices</div>
+                                    <div class="main-shoes-field-nav-filters-prices-icon icon-switcher"
+                                        id="switch-prices"></div>
+                                </div>
                                 <div class="main-shoes-field-nav-filters-prices-items-wrapper" id="price-filter">
                                     <div class="main-shoes-field-nav-filters-prices-items-item">0-100</div>
                                     <div class="main-shoes-field-nav-filters-prices-items-item">100-130</div>
@@ -50,8 +59,11 @@
                                 </div>
                             </div>
                             <div class="main-shoes-field-nav-filters-sizes-wrapper">
-                                <span class="main-shoes-field-nav-filters-sizes-items">Sizes</span>
-                                <span class="main-shoes-field-nav-filters-sizes-icon"></span>
+                                <div class="main-shoes-field-nav-filters-sizes-items-switcher">
+                                    <div class="main-shoes-field-nav-filters-sizes-items">Sizes</div>
+                                    <div class="main-shoes-field-nav-filters-sizes-icon icon-switcher"
+                                        id="switch-sizes"></div>
+                                </div>
                                 <div class="main-shoes-field-nav-filters-sizes-items-wrapper" id="size-filter"></div>
                             </div>
                         </div>
@@ -68,7 +80,7 @@
     <script type="module" src="../../js/loaderHTML.js"></script>
     <script type="module" src="../../js/playersList.js"></script>
     <script type="module" src="../../js/renderCatalog.js"></script>
-
+    <script type="module" src="../../js/catalogSwitchers.js"></script>
 </body>
 
 </html>

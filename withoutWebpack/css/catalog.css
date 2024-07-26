@@ -18,34 +18,33 @@
 #items-field {
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
   gap: 20px;
   max-width: 1100px;
-  margin-left: 250px;
 }
 
 .main-shoes-field-wrapper {
   display: flex;
   flex-direction: row;
+  gap: 30px;
 }
 
 .main-shoes-field-nav-wrapper {
   display: flex;
   flex-direction: column;
   gap: 3vh;
-  width: 100%;
-  max-width: 250px;
   font-size: 20px;
-  position: fixed;
-  z-index: 1000;
+  margin-left: 20px;
 }
 
 .main-shoes-field-nav-players-wrapper {
   display: flex;
   flex-direction: column;
   gap: 5px;
+  width: 100%;
+  max-width: 230px;
 }
 
 .main-players-item {
@@ -97,6 +96,8 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
+  width: 100%;
+  max-width: 200px;
 }
 
 .main-shoes-field-nav-filters-sizes-items-wrapper {
@@ -121,3 +122,50 @@
   border: 3px solid var(--border_color);
   border-radius: 10px;
 }
+
+.main-shoes-header-sort-items-switcher,
+.main-shoes-field-nav-filters-colors-items-switcher,
+.main-shoes-field-nav-filters-prices-items-switcher,
+.main-shoes-field-nav-filters-sizes-items-switcher {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+/* icon-switchers start*/
+.icon-switcher {
+  position: relative;
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-switcher::before,
+.icon-switcher::after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 2px;
+  background-color: black;
+  transition: transform 0.3s;
+}
+
+.icon-switcher::before {
+  transform: rotate(0deg);
+}
+
+.icon-switcher::after {
+  transform: rotate(90deg);
+}
+
+.icon-switcher.active::before {
+  transform: rotate(0deg);
+}
+
+.icon-switcher.active::after {
+  transform: rotate(0deg);
+}
+/* icon-switchers end*/
