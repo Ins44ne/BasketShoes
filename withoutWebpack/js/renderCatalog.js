@@ -81,11 +81,18 @@ async function renderShoes() {
         block.appendChild(sizeItem)
       }
       if (block === colorFilterBlock) {
-        const colorsItem = document.createElement('div')
-        colorsItem.classList.add('main-shoes-field-nav-filters-colors-item')
-        colorsItem.id = el
-        colorsItem.textContent = el
-        block.appendChild(colorsItem)
+        const label = document.createElement('label')
+        label.classList.add('main-shoes-field-nav-filters-colors-item-label')
+
+        const checkbox = document.createElement('input')
+        checkbox.type = 'checkbox'
+        checkbox.classList.add('main-shoes-field-nav-filters-colors-item-item')
+        checkbox.id = `filters-colors-${el}`
+
+        label.appendChild(checkbox)
+        label.appendChild(document.createTextNode(el))
+
+        block.appendChild(label)
       }
     })
   }
