@@ -8,6 +8,11 @@
   gap: 3vh;
 }
 
+.main-shoes-header-sort-wrapper {
+  width: 100%;
+  max-width: 150px;
+}
+
 .main-shoes-header {
   display: flex;
   flex-direction: row;
@@ -130,6 +135,13 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+}
+
+.main-shoes-header-sort-item-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
 
 /* icon-switchers start*/
@@ -169,3 +181,17 @@
   transform: rotate(0deg);
 }
 /* icon-switchers end*/
+
+#color-filter,
+#price-filter {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.main-shoes-field-nav-filters-colors-item-item,
+.main-shoes-field-nav-filters-prices-items-item {
+  margin-right: 10px;
+  width: 20px;
+  height: 20px;
+}

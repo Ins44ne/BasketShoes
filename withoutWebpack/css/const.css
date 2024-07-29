@@ -69,3 +69,23 @@ body {
 .main-services {
   margin-top: 3vh;
 }
+
+.main-shoes-header-sort-item,
+.filter,
+.main-shoes-field-nav-filters-colors-item-label,
+.main-shoes-field-nav-filters-prices-items-label {
+  cursor: pointer;
+}
+
+.hide-item {
+  opacity: 0;
+  max-height: 0;
+  overflow: hidden;
+  transition: opacity 1s ease, max-height 1s ease;
+}
+
+.show-item {
+  opacity: 1;
+  max-height: 1000px;
+  transition: opacity 1s ease, max-height 1s ease;
+}
