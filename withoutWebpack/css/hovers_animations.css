@@ -61,7 +61,7 @@
   width: 100%;
 }
 
-.main-shoes-field-nav-filters-sizes-item:hover {
+.main-shoes-field-nav-filters-sizes-item:not(.chosen):hover {
   color: var(--text_color1);
   border-color: var(--button_color);
   background-color: var(--border_color);

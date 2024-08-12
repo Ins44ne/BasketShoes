@@ -72,8 +72,9 @@ body {
 
 .main-shoes-header-sort-item,
 .filter,
-.main-shoes-field-nav-filters-colors-item-label,
-.main-shoes-field-nav-filters-prices-items-label {
+.main-shoes-field-nav-filters-colors-item-label {
+  display: flex;
+  align-items: center;
   cursor: pointer;
 }
 
@@ -88,4 +89,8 @@ body {
   opacity: 1;
   max-height: 1000px;
   transition: opacity 1s ease, max-height 1s ease;
+}
+
+.chosen {
+  background-color: var(--promo_price_color);
 }

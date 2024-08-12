@@ -23,11 +23,12 @@
 #items-field {
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: flex-start;
   align-items: center;
   flex-wrap: wrap;
-  gap: 20px;
-  max-width: 1100px;
+  gap: 30px;
+  max-width: 1150px;
+  width: 100%;
 }
 
 .main-shoes-field-wrapper {
@@ -96,7 +97,6 @@
 }
 
 .main-shoes-field-nav-filters-colors-wrapper,
-.main-shoes-field-nav-filters-prices-wrapper,
 .main-shoes-field-nav-filters-sizes-wrapper {
   display: flex;
   flex-direction: column;
@@ -113,7 +113,6 @@
 }
 
 .main-shoes-field-nav-filters-colors-item,
-.main-shoes-field-nav-filters-prices-items-item,
 .main-shoes-field-nav-filters-sizes-item {
   cursor: pointer;
 }
@@ -130,7 +129,6 @@
 
 .main-shoes-header-sort-items-switcher,
 .main-shoes-field-nav-filters-colors-items-switcher,
-.main-shoes-field-nav-filters-prices-items-switcher,
 .main-shoes-field-nav-filters-sizes-items-switcher {
   display: flex;
   flex-direction: row;
@@ -182,15 +180,13 @@
 }
 /* icon-switchers end*/
 
-#color-filter,
-#price-filter {
+#color-filter {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
 
-.main-shoes-field-nav-filters-colors-item-item,
-.main-shoes-field-nav-filters-prices-items-item {
+.main-shoes-field-nav-filters-colors-item-item {
   margin-right: 10px;
   width: 20px;
   height: 20px;
