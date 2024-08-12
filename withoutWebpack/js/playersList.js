@@ -19,7 +19,7 @@ async function playerNames() {
   playersArr.forEach((el) => {
     const playerElement = document.createElement('div')
     playerElement.classList.add('main-players-item')
-    playerElement.id = el.replace(' ', '')
+    playerElement.id = el.replace(' ', '_')
     playerElement.textContent = el
     playersBlock.appendChild(playerElement)
   })
