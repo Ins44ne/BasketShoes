@@ -15,8 +15,20 @@ document.addEventListener('DOMContentLoaded', function () {
     }
   }
 
+  function sizeBlockChoose(event) {
+    event.target.classList.toggle('chosen')
+  }
+
   const filterBlocks = document.querySelectorAll('.filter')
   filterBlocks.forEach(function (filterBlock) {
     filterBlock.addEventListener('click', toggleIconSwitcher)
+  })
+
+  document.body.addEventListener('click', function (event) {
+    if (
+      event.target.classList.contains('main-shoes-field-nav-filters-sizes-item')
+    ) {
+      sizeBlockChoose(event)
+    }
   })
 })
