@@ -7,11 +7,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const basePath = getBasePath()
 
-  function loadHtml(url, elementId) {
+  function loadHtml(url, elementId, callback) {
     fetch(basePath + url)
       .then((response) => response.text())
       .then((data) => {
         document.getElementById(elementId).innerHTML = data
+        if (callback) callback()
       })
       .catch((error) => console.error('Error loading HTML:', error))
   }
@@ -25,7 +26,18 @@ document.addEventListener('DOMContentLoaded', () => {
       .catch((error) => console.error('Error loading SVG:', error))
   }
 
-  loadHtml('pages/components/header.html', 'header')
+  loadHtml('pages/components/header.html', 'header', () => {
+    const logoElement = document.querySelector('.header-menu-logo')
+    if (logoElement) {
+      logoElement.addEventListener('click', (event) => {
+        event.preventDefault()
+        window.location.href = basePath + 'index.html'
+      })
+    } else {
+      console.error('Element .header-menu-logo not found')
+    }
+  })
+
   loadSvg('img/icons/header/account/cart.svg', 'cart')
   loadSvg('img/icons/header/account/fav.svg', 'fav')
   loadSvg('img/icons/header/account/login.svg', 'account')
