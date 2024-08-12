@@ -1,109 +1,248 @@
 import { fetchShoesData, dataArray } from './fetchShoesData.js'
 
-async function renderShoes() {
-  await fetchShoesData()
-  const itemShoesBlock = document.getElementById('items-field')
-  const shoesNumberElement = document.getElementById('main-shoes-header-number')
-  const colorFilterBlock = document.getElementById('color-filter')
-  const sizeFilterBlock = document.getElementById('size-filter')
+document.addEventListener('DOMContentLoaded', function () {
+  async function renderSortShoes(
+    playerId,
+    selectedColors = [],
+    selectedSizes = [],
+    sortOrder = null
+  ) {
+    await fetchShoesData()
+    const itemShoesBlock = document.getElementById('items-field')
 
-  let numberOfShoes = 0
-  let colorsArr = []
-  let sizesArr = []
+    const shoesNumberElement = document.getElementById(
+      'main-shoes-header-number'
+    )
+    const colorFilterBlock = document.getElementById('color-filter')
+    const sizeFilterBlock = document.getElementById('size-filter')
 
-  dataArray.forEach((data) => {
-    Object.values(data).forEach((shoes) => {
-      shoes.forEach((shoe) => {
-        const shoeItem = document.createElement('div')
-        shoeItem.classList.add('main-shoes-field-items-item')
-        shoeItem.id = shoe.id
+    itemShoesBlock.innerHTML = ''
+    colorFilterBlock.innerHTML = ''
+    sizeFilterBlock.innerHTML = ''
 
-        const shoeImage = document.createElement('img')
-        shoeImage.src = `../../${shoe.images[0]}`
-        shoeImage.classList.add('main-shoes-field-items-item-img')
-        shoeImage.alt = `${shoe.shoe_name}`
-        shoeItem.appendChild(shoeImage)
+    let numberOfShoes = 0
+    let colorsArr = []
+    let sizesArr = []
 
-        const shoeName = document.createElement('h3')
-        shoeName.textContent = shoe.shoe_name
-        shoeName.classList.add('main-shoes-field-items-item-name')
-        shoeItem.appendChild(shoeName)
+    let filteredShoes = []
 
-        const shoePriceWrapper = document.createElement('div')
-        shoePriceWrapper.classList.add(
-          'main-shoes-field-items-item-price-wrapper'
-        )
-        shoeItem.appendChild(shoePriceWrapper)
+    dataArray.forEach((data) => {
+      Object.values(data).forEach((shoes) => {
+        shoes.forEach((shoe) => {
+          const matchesPlayer = !playerId || playerId === shoe.shoe_line_name
+          const matchesColors =
+            selectedColors.length === 0 ||
+            selectedColors.some((color) => shoe.color.includes(color))
+          const matchesSizes =
+            selectedSizes.length === 0 ||
+            selectedSizes.some((size) => shoe.sizes.includes(parseInt(size)))
 
-        if (shoe.discounted_price !== 0) {
-          const shoePrice = document.createElement('p')
-          shoePrice.textContent = `$${shoe.price}`
-          shoePrice.classList.add(
-            'main-shoes-field-items-item-price',
-            'old_price'
-          )
-          shoePriceWrapper.appendChild(shoePrice)
-
-          const shoeDiscountedPrice = document.createElement('p')
-          shoeDiscountedPrice.textContent = `$${shoe.discounted_price}`
-          shoeDiscountedPrice.classList.add(
-            'main-shoes-field-items-item-discount'
-          )
-          shoePriceWrapper.appendChild(shoeDiscountedPrice)
-        } else {
-          const shoePrice = document.createElement('p')
-          shoePrice.textContent = `$${shoe.price}`
-          shoePrice.classList.add('main-shoes-field-items-item-price')
-          shoePriceWrapper.appendChild(shoePrice)
-        }
-        numberOfShoes += 1
-        shoe.color.forEach((col) => {
-          colorsArr.push(col)
+          if (matchesPlayer && matchesColors && matchesSizes) {
+            filteredShoes.push(shoe)
+            colorsArr.push(...shoe.color)
+            sizesArr.push(...shoe.sizes)
+          }
         })
-        shoe.sizes.forEach((size) => {
-          sizesArr.push(size)
-        })
-        itemShoesBlock.appendChild(shoeItem)
       })
     })
-  })
 
-  function renderFilters(arr, block) {
-    arr.sort((a, b) => {
-      return a - b
+    if (sortOrder) {
+      filteredShoes.sort((a, b) => {
+        if (sortOrder === 'highLow') {
+          return (
+            (b.discounted_price || b.price) - (a.discounted_price || a.price)
+          )
+        } else if (sortOrder === 'lowHigh') {
+          return (
+            (a.discounted_price || a.price) - (b.discounted_price || b.price)
+          )
+        }
+      })
+    }
+
+    filteredShoes.forEach((shoe) => {
+      const shoeItem = document.createElement('div')
+      shoeItem.classList.add('main-shoes-field-items-item')
+      shoeItem.id = shoe.id
+
+      const shoeImage = document.createElement('img')
+      shoeImage.src = `../../${shoe.images[0]}`
+      shoeImage.classList.add('main-shoes-field-items-item-img')
+      shoeImage.alt = `${shoe.shoe_name}`
+      shoeItem.appendChild(shoeImage)
+
+      const shoeName = document.createElement('h3')
+      shoeName.textContent = shoe.shoe_name
+      shoeName.classList.add('main-shoes-field-items-item-name')
+      shoeItem.appendChild(shoeName)
+
+      const shoePriceWrapper = document.createElement('div')
+      shoePriceWrapper.classList.add(
+        'main-shoes-field-items-item-price-wrapper'
+      )
+      shoeItem.appendChild(shoePriceWrapper)
+
+      if (shoe.discounted_price !== 0) {
+        const shoePrice = document.createElement('p')
+        shoePrice.textContent = `$${shoe.price}`
+        shoePrice.classList.add(
+          'main-shoes-field-items-item-price',
+          'old_price'
+        )
+        shoePriceWrapper.appendChild(shoePrice)
+
+        const shoeDiscountedPrice = document.createElement('p')
+        shoeDiscountedPrice.textContent = `$${shoe.discounted_price}`
+        shoeDiscountedPrice.classList.add(
+          'main-shoes-field-items-item-discount'
+        )
+        shoePriceWrapper.appendChild(shoeDiscountedPrice)
+      } else {
+        const shoePrice = document.createElement('p')
+        shoePrice.textContent = `$${shoe.price}`
+        shoePrice.classList.add('main-shoes-field-items-item-price')
+        shoePriceWrapper.appendChild(shoePrice)
+      }
+
+      itemShoesBlock.appendChild(shoeItem)
+      numberOfShoes += 1
     })
-    arr.forEach((el) => {
-      if (block === sizeFilterBlock) {
-        const sizeItem = document.createElement('div')
-        sizeItem.classList.add('main-shoes-field-nav-filters-sizes-item')
-        sizeItem.id = el
-        sizeItem.textContent = el
-        block.appendChild(sizeItem)
-      }
-      if (block === colorFilterBlock) {
-        const label = document.createElement('label')
-        label.classList.add('main-shoes-field-nav-filters-colors-item-label')
 
-        const checkbox = document.createElement('input')
-        checkbox.type = 'checkbox'
-        checkbox.classList.add('main-shoes-field-nav-filters-colors-item-item')
-        checkbox.id = `filters-colors-${el}`
+    function renderFilters(arr, block) {
+      arr.sort((a, b) => (typeof a === 'string' ? a.localeCompare(b) : a - b))
+      arr.forEach((el) => {
+        if (block === sizeFilterBlock) {
+          const sizeItem = document.createElement('div')
+          sizeItem.classList.add('main-shoes-field-nav-filters-sizes-item')
+          sizeItem.id = el
+          sizeItem.textContent = el
+          if (selectedSizes.includes(el.toString())) {
+            sizeItem.classList.add('chosen')
+          }
+          block.appendChild(sizeItem)
+        }
+        if (block === colorFilterBlock) {
+          const label = document.createElement('label')
+          label.classList.add('main-shoes-field-nav-filters-colors-item-label')
 
-        label.appendChild(checkbox)
-        label.appendChild(document.createTextNode(el))
+          const checkbox = document.createElement('input')
+          checkbox.type = 'checkbox'
+          checkbox.classList.add(
+            'main-shoes-field-nav-filters-colors-item-item'
+          )
+          checkbox.id = `filters-colors-${el}`
+          checkbox.value = el
 
-        block.appendChild(label)
-      }
+          if (selectedColors.includes(el)) {
+            checkbox.checked = true
+          }
+
+          label.appendChild(checkbox)
+          label.appendChild(document.createTextNode(el))
+
+          block.appendChild(label)
+        }
+      })
+    }
+
+    function checkSelectedColors(selectedColors) {
+      const colorCheckboxes = document.querySelectorAll(
+        '.main-shoes-field-nav-filters-colors-item-item'
+      )
+      colorCheckboxes.forEach((checkbox) => {
+        if (selectedColors.includes(checkbox.value)) {
+          checkbox.checked = true
+        }
+      })
+    }
+
+    let uniqueSizes = [...new Set(sizesArr)]
+    let uniqueColors = [...new Set(colorsArr)]
+
+    renderFilters(uniqueSizes, sizeFilterBlock)
+    renderFilters(uniqueColors, colorFilterBlock)
+    shoesNumberElement.textContent = `(${numberOfShoes})`
+
+    checkSelectedColors(selectedColors)
+    addColorFilterEventListeners()
+    addSizeFilterEventListeners()
+  }
+
+  function resetShoes(playerId, sortOrder = null) {
+    const selectedColors = Array.from(
+      document.querySelectorAll(
+        '.main-shoes-field-nav-filters-colors-item-item:checked'
+      )
+    ).map((checkbox) => checkbox.value)
+    const selectedSizes = Array.from(
+      document.querySelectorAll(
+        '.main-shoes-field-nav-filters-sizes-item.chosen'
+      )
+    ).map((item) => item.id)
+    renderSortShoes(playerId, selectedColors, selectedSizes, sortOrder)
+  }
+
+  function addPlayerEventListeners() {
+    const playerBlocks = document.querySelectorAll('.main-players-item')
+    playerBlocks.forEach((block) => {
+      block.addEventListener('click', () => {
+        resetShoes(block.id)
+      })
     })
   }
 
-  let uniqueSizes = [...new Set(sizesArr)]
-  let uniquecolor = [...new Set(colorsArr)]
+  function addColorFilterEventListeners() {
+    const colorCheckboxes = document.querySelectorAll(
+      '.main-shoes-field-nav-filters-colors-item-item'
+    )
+    colorCheckboxes.forEach((checkbox) => {
+      checkbox.addEventListener('change', () => {
+        resetShoes()
+      })
+    })
+  }
 
-  renderFilters(uniqueSizes, sizeFilterBlock)
-  renderFilters(uniquecolor, colorFilterBlock)
-  shoesNumberElement.textContent = `(${numberOfShoes})`
-}
+  function addSizeFilterEventListeners() {
+    const sizeItems = document.querySelectorAll(
+      '.main-shoes-field-nav-filters-sizes-item'
+    )
+    sizeItems.forEach((item) => {
+      item.addEventListener('click', () => {
+        if (item.classList.contains('chosen')) {
+          item.classList.remove('chosen')
+        } else {
+          item.classList.add('chosen')
+        }
+        resetShoes()
+      })
+    })
+  }
 
-document.addEventListener('DOMContentLoaded', renderShoes)
-/*main-shoes-field-nav-filters-colors-item*/
+  function addSortEventListeners() {
+    const highLowButton = document.getElementById('highLow')
+    const lowHighButton = document.getElementById('lowHigh')
+
+    highLowButton.addEventListener('click', () => {
+      resetShoes(null, 'highLow')
+    })
+
+    lowHighButton.addEventListener('click', () => {
+      resetShoes(null, 'lowHigh')
+    })
+  }
+
+  const observer = new MutationObserver((mutationsList, observer) => {
+    for (let mutation of mutationsList) {
+      if (mutation.type === 'childList') {
+        addPlayerEventListeners()
+      }
+    }
+  })
+
+  const playersList = document.getElementById('players-list')
+  observer.observe(playersList, { childList: true })
+
+  addPlayerEventListeners()
+  addSortEventListeners()
+  renderSortShoes()
+})
