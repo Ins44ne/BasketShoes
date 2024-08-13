@@ -61,9 +61,18 @@
   width: 100%;
 }
 
-.main-shoes-field-nav-filters-sizes-item:not(.chosen):hover {
+.main-shoes-field-nav-filters-sizes-item:not(.chosen):hover,
+.main-shoe-info-size-item:not(.chosen):hover {
   color: var(--text_color1);
   border-color: var(--button_color);
   background-color: var(--border_color);
   transition: 0.7s all;
+}
+
+.button_fav:hover,
+.main-shoe-size-table-button-inch:hover,
+.main-shoe-size-table-button-cm:hover {
+  border: 3px solid var(--text_color2);
+  background-color: var(--promo_price_color);
+  color: var(--text_color2);
 }
