@@ -1,0 +1,162 @@
+#main {
+  margin-top: 120px;
+}
+
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+}
+
+.main-shoe-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 1vw;
+}
+
+.main-shoe-images-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 1vw;
+}
+
+.main-shoe-images-gallery-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.main-shoe-images-image-wrapper {
+  width: 500px;
+}
+
+.main-shoe-images-gallery-item {
+  max-width: 60px;
+  max-height: 60px;
+  width: 100%;
+  cursor: pointer;
+}
+
+.main-shoe-images-image-main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 535px;
+  width: 100%;
+}
+
+.main-shoe-info-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.main-shoe-info-price-wrapper {
+  font-size: 36px;
+}
+
+.main-shoe-info-name-text {
+  font-size: 36px;
+}
+
+.main-shoe-info-color-wrapper {
+  font-size: 20px;
+}
+
+.main-shoe-info-size-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 5px;
+  max-width: 220px;
+}
+
+.main-shoe-info-size-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 70px;
+  height: 70px;
+  border: 3px solid var(--border_color);
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.main-shoe-info-buttons-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+}
+
+.button_cart,
+.button_fav {
+  padding: 18px 24px;
+  text-align: center;
+  border-radius: 30px;
+}
+
+.button_fav {
+  border: 3px solid var(--text_color1);
+  background-color: var(--text_color2);
+  color: var(--text_color1);
+}
+
+.main-shoe-size-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 950px;
+  font-size: 18px;
+}
+
+.main-shoe-size-text {
+  font-weight: 400;
+}
+
+.main-shoe-size-table-button-wrapper {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.main-shoe-size-table-button-inch,
+.main-shoe-size-table-button-cm {
+  width: 50px;
+  padding: 2px;
+  text-align: center;
+  background-color: var(--text_color2);
+  color: var(--text_color1);
+  border: 3px solid var(--text_color1);
+}
+
+.main-shoe-size-table-wrapper {
+  max-width: 850px;
+  width: 100%;
+  overflow: auto;
+  font-size: 14px;
+  border-top: 1px solid var(--border_color);
+  box-shadow: inset 0px -10px 30px 0px;
+}
+
+.main-shoe-size-table tr > * {
+  border-bottom: 1px solid var(--border_color);
+  border-right: 1px solid var(--border_color);
+}
+
+.main-shoe-size-table th {
+  padding: 5px;
+}
+
+.main-shoe-size-table td {
+  padding: 3px 7px;
+  text-align: center;
+}
+
+.main-shoe-size-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
