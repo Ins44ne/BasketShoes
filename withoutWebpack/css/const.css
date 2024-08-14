@@ -92,5 +92,5 @@ body {
 }
 
 .chosen {
-  background-color: var(--promo_price_color);
+  background-color: var(--promo_price_color) !important;
 }
