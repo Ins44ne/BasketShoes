@@ -30,7 +30,8 @@
 }
 
 .main-shoe-images-image-wrapper {
-  width: 500px;
+  max-width: 500px;
+  width: 100%;
 }
 
 .main-shoe-images-gallery-item {
@@ -54,10 +55,7 @@
   gap: 20px;
 }
 
-.main-shoe-info-price-wrapper {
-  font-size: 36px;
-}
-
+.main-shoe-info-price-wrapper,
 .main-shoe-info-name-text {
   font-size: 36px;
 }
@@ -159,4 +157,58 @@
   display: flex;
   flex-direction: column;
   gap: 10px;
+}
+
+#METRIC {
+  display: none;
+}
+
+@media (max-width: 1000px) {
+  .main-shoe-wrapper,
+  .main-shoe-images-wrapper {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 3vw;
+  }
+
+  .main-shoe-images-gallery-wrapper {
+    flex-direction: row;
+    gap: 13px;
+  }
+
+  .main-shoe-info-price-wrapper,
+  .main-shoe-info-name-text {
+    font-size: 24px;
+  }
+
+  .main-shoe-info-color-wrapper {
+    font-size: 14px;
+  }
+  .main-shoe-info-size-wrapper {
+    max-width: inherit;
+  }
+  .main-shoe-info-size-item {
+    width: 50px;
+    height: 50px;
+  }
+  .main-shoe-size-wrapper {
+    width: 90%;
+  }
+}
+
+@media (max-width: 550px) {
+  .main-shoe-images-gallery-wrapper {
+    gap: 5px;
+    flex-wrap: wrap;
+  }
+
+  .main-shoe-images-gallery-item {
+    margin-bottom: 15px;
+  }
+
+  .main-shoe-images-image-wrapper {
+    max-width: 500px;
+    width: 95%;
+    margin: 0 auto;
+  }
 }
