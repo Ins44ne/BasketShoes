@@ -36,6 +36,34 @@ document.addEventListener('DOMContentLoaded', () => {
     } else {
       console.error('Element .header-menu-logo not found')
     }
+
+    const favElement = document.getElementById('fav')
+    if (favElement) {
+      favElement.addEventListener('click', (event) => {
+        event.preventDefault()
+        window.location.href = `${basePath}pages/fav/fav.html`
+      })
+    } else {
+      console.error('Element with id="fav" not found')
+    }
+    const cartElement = document.getElementById('cart')
+    if (cartElement) {
+      cartElement.addEventListener('click', (event) => {
+        event.preventDefault()
+        window.location.href = `${basePath}pages/cart/cart.html`
+      })
+    } else {
+      console.error('Element with id="cart" not found')
+    }
+    const accountElement = document.getElementById('account')
+    if (accountElement) {
+      accountElement.addEventListener('click', (event) => {
+        event.preventDefault()
+        window.location.href = `${basePath}pages/account/account.html`
+      })
+    } else {
+      console.error('Element with id="account" not found')
+    }
   })
 
   loadSvg('img/icons/header/account/cart.svg', 'cart')
