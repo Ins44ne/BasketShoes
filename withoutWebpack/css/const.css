@@ -43,6 +43,10 @@ body {
   background-color: var(--text_color2);
 }
 
+#main {
+  margin-top: 120px;
+}
+
 .button {
   cursor: pointer;
   color: var(--text_color2);
