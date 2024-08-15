@@ -8,6 +8,8 @@ document.addEventListener('DOMContentLoaded', async function () {
 
   const itemId = getQueryParam('id')
 
+  document.title += `. ${itemId}`
+
   await fetchShoesData()
 
   dataArray.forEach((data) => {
