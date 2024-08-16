@@ -1,12 +1,14 @@
 import { fetchShoesData, dataArray } from './fetchShoesData.js'
 
+export let itemId
+
 document.addEventListener('DOMContentLoaded', async function () {
   function getQueryParam(param) {
     const urlParams = new URLSearchParams(window.location.search)
     return urlParams.get(param)
   }
 
-  const itemId = getQueryParam('id')
+  itemId = getQueryParam('id')
 
   document.title += `. ${itemId}`
 
