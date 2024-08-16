@@ -1,4 +1,4 @@
-import { fetchShoesData, dataArray } from './fetchShoesData.js'
+import { fetchShoesData, dataArray } from '../components/fetchShoesData.js'
 
 async function playerNames() {
   await fetchShoesData()

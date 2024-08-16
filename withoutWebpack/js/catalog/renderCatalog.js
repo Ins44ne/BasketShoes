@@ -1,4 +1,4 @@
-import { fetchShoesData, dataArray } from './fetchShoesData.js'
+import { fetchShoesData, dataArray } from '../components/fetchShoesData.js'
 
 document.addEventListener('DOMContentLoaded', function () {
   async function renderSortShoes(
