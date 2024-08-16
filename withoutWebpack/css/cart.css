@@ -1,0 +1,26 @@
+.main-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1vh;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.main-shoe-cart-item {
+  display: grid;
+  grid-template-columns: 100px 250px 100px 150px;
+  grid-template-rows: 1fr;
+  grid-column-gap: 7vw;
+  grid-row-gap: 0px;
+  align-items: center;
+  border-bottom: 1px solid var(--border_color);
+}
+
+.main-shoe-cart-item-img {
+  max-width: 100px;
+}
+
+.button-delete {
+  max-width: 150px;
+}
