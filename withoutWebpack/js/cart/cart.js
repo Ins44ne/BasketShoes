@@ -43,14 +43,24 @@ document.addEventListener('DOMContentLoaded', async function () {
               shoePriceWrapper.appendChild(shoePrice)
             }
 
-            const duttonDelete = document.createElement('button')
-            duttonDelete.textContent = 'delete'
-            duttonDelete.classList.add(
+            const buttonDelete = document.createElement('button')
+            buttonDelete.textContent = 'delete'
+            buttonDelete.classList.add(
               'main-shoe-cart-item-button',
               'button',
               'button-delete'
             )
-            shoeItem.appendChild(duttonDelete)
+            shoeItem.appendChild(buttonDelete)
+
+            buttonDelete.addEventListener('click', function () {
+              const parentElement = this.parentElement
+              const itemId = parentElement.id
+              parentElement.remove()
+
+              let cartItems = JSON.parse(localStorage.getItem('cart')) || []
+              const updatedcartItems = cartItems.filter((id) => id !== itemId)
+              localStorage.setItem('cart', JSON.stringify(updatedcartItems))
+            })
 
             itemShoesBlock.appendChild(shoeItem)
           }
