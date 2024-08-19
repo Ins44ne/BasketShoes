@@ -9,7 +9,7 @@
 
 .main-shoe-cart-item {
   display: grid;
-  grid-template-columns: 100px 250px 100px 150px;
+  grid-template-columns: 100px 250px 100px 60px;
   grid-template-rows: 1fr;
   grid-column-gap: 7vw;
   grid-row-gap: 0px;
@@ -22,5 +22,6 @@
 }
 
 .button-delete {
-  max-width: 150px;
+  max-width: 60px;
+  padding: 5px 3px;
 }
