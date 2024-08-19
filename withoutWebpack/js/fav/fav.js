@@ -3,11 +3,11 @@ import { fetchShoesData, dataArray } from '../components/fetchShoesData.js'
 document.addEventListener('DOMContentLoaded', async function () {
   await fetchShoesData()
 
-  const cartItems = JSON.parse(localStorage.getItem('fav')) || []
+  const favItems = JSON.parse(localStorage.getItem('fav')) || []
 
   const itemShoesBlock = document.querySelector('.main-wrapper')
 
-  cartItems.forEach((itemId) => {
+  favItems.forEach((itemId) => {
     dataArray.forEach((data) => {
       Object.values(data).forEach((shoes) => {
         shoes.forEach((shoe) => {
@@ -43,14 +43,24 @@ document.addEventListener('DOMContentLoaded', async function () {
               shoePriceWrapper.appendChild(shoePrice)
             }
 
-            const duttonDelete = document.createElement('button')
-            duttonDelete.textContent = 'delete'
-            duttonDelete.classList.add(
+            const buttonDelete = document.createElement('button')
+            buttonDelete.textContent = 'delete'
+            buttonDelete.classList.add(
               'main-shoe-fav-item-button',
               'button',
               'button-delete'
             )
-            shoeItem.appendChild(duttonDelete)
+            shoeItem.appendChild(buttonDelete)
+
+            buttonDelete.addEventListener('click', function () {
+              const parentElement = this.parentElement
+              const itemId = parentElement.id
+              parentElement.remove()
+
+              let favItems = JSON.parse(localStorage.getItem('fav')) || []
+              const updatedFavItems = favItems.filter((id) => id !== itemId)
+              localStorage.setItem('fav', JSON.stringify(updatedFavItems))
+            })
 
             itemShoesBlock.appendChild(shoeItem)
           }
