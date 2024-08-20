@@ -1,11 +1,19 @@
 import { itemId } from './renderShoe.js'
 
-function addToStorage(key, itemId) {
+function addToStorage(key, itemId, selectedSizes) {
   let items = JSON.parse(localStorage.getItem(key)) || []
 
-  if (!items.includes(itemId)) {
-    items.push(itemId)
-  }
+  selectedSizes.forEach((size) => {
+    const existingItem = items.find(
+      (item) => item.itemId === itemId && item.size === size
+    )
+
+    if (existingItem) {
+      existingItem.quantity += 1
+    } else {
+      items.push({ itemId, size, quantity: 1 })
+    }
+  })
 
   localStorage.setItem(key, JSON.stringify(items))
 }
@@ -19,16 +27,34 @@ function sizeBlockClick(event) {
   }
 }
 
-function checkSizeSelection() {
-  const sizeItems = document.querySelectorAll('.main-shoe-info-size-item')
-  return Array.from(sizeItems).some((item) => item.classList.contains('chosen'))
+function getSelectedSizes() {
+  const sizeItems = document.querySelectorAll(
+    '.main-shoe-info-size-item.chosen'
+  )
+  return Array.from(sizeItems).map((item) => item.id)
 }
 
-function showSizeWarning() {
+function checkSizeSelection() {
+  return getSelectedSizes().length > 0
+}
+
+function showWarning(cartBool, favBool) {
   const warningDiv = document.createElement('div')
   warningDiv.classList.add('service-alert')
-  warningDiv.textContent = 'Please select shoe size'
 
+  if (favBool) {
+    warningDiv.textContent = 'Added to favorites'
+  } else {
+    if (cartBool) {
+      const chosenSizes = document.querySelectorAll('.chosen')
+      chosenSizes.forEach((el) => {
+        el.classList.remove('chosen')
+      })
+      warningDiv.textContent = 'Added to cart'
+    } else {
+      warningDiv.textContent = 'Please select shoe size'
+    }
+  }
   document.body.appendChild(warningDiv)
 
   setTimeout(() => {
@@ -37,14 +63,17 @@ function showSizeWarning() {
 }
 
 document.getElementById('button-fav').addEventListener('click', function () {
-  addToStorage('fav', itemId)
+  addToStorage('fav', itemId, [])
+  showWarning('', true)
 })
 
 document.getElementById('button-cart').addEventListener('click', function () {
   if (checkSizeSelection()) {
-    addToStorage('cart', itemId)
+    const selectedSizes = getSelectedSizes()
+    addToStorage('cart', itemId, selectedSizes)
+    showWarning(true)
   } else {
-    showSizeWarning()
+    showWarning(false)
   }
 })
 
