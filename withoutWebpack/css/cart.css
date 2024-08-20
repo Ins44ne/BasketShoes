@@ -9,11 +9,12 @@
 
 .main-shoe-cart-item {
   display: grid;
-  grid-template-columns: 100px 250px 100px 60px;
+  grid-template-columns: 100px 250px 60px 90px 40px 60px;
   grid-template-rows: 1fr;
   grid-column-gap: 7vw;
   grid-row-gap: 0px;
   align-items: center;
+  justify-items: center;
   border-bottom: 1px solid var(--border_color);
 }
 
@@ -21,7 +22,22 @@
   max-width: 100px;
 }
 
+.main-shoe-cart-item-quantity-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.main-shoe-cart-item-quantity {
+  font-size: 18px;
+}
+
 .button-delete {
   max-width: 60px;
   padding: 5px 3px;
+}
+
+.quantity-button {
+  padding: 5px 10px;
 }
