@@ -55,20 +55,10 @@ document.addEventListener('DOMContentLoaded', () => {
     } else {
       console.error('Element with id="cart" not found')
     }
-    const accountElement = document.getElementById('account')
-    if (accountElement) {
-      accountElement.addEventListener('click', (event) => {
-        event.preventDefault()
-        window.location.href = `${basePath}pages/account/account.html`
-      })
-    } else {
-      console.error('Element with id="account" not found')
-    }
   })
 
   loadSvg('img/icons/header/account/cart.svg', 'cart')
   loadSvg('img/icons/header/account/fav.svg', 'fav')
-  loadSvg('img/icons/header/account/login.svg', 'account')
 
   loadHtml('pages/components/footer.html', 'footer')
   loadSvg('img/icons/footer/facebook.svg', 'facebook')
