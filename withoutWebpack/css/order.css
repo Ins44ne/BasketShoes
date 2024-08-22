@@ -1,0 +1,67 @@
+.order-form {
+  max-width: 500px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.order-form h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.order-form label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+.order-form input,
+.order-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.order-form textarea {
+  height: 100px;
+  resize: vertical;
+}
+
+.radio-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+.order-form .radio-group {
+  margin-bottom: 15px;
+}
+.order-form .radio-group label {
+  font-weight: normal;
+  margin-right: 10px;
+}
+.order-form .radio-group input {
+  margin-right: 5px;
+}
+.order-form button {
+  width: 100%;
+  padding: 10px;
+  font-size: 16px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+.order-form button:hover {
+  color: var(--text_color1);
+  border-color: var(--button_color);
+  background-color: var(--border_color);
+}
+#card,
+#cash {
+  width: inherit;
+}
+.error-message {
+  color: var(--promo_price_color);
+  font-size: 12px;
+  margin-bottom: 15px;
+  display: none;
+}
