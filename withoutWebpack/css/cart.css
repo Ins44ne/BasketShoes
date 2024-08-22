@@ -9,9 +9,9 @@
 
 .main-shoe-cart-item {
   display: grid;
-  grid-template-columns: 100px 250px 60px 90px 40px 60px;
+  grid-template-columns: 100px 250px 60px 90px 60px 60px;
   grid-template-rows: 1fr;
-  grid-column-gap: 7vw;
+  grid-column-gap: 50px;
   grid-row-gap: 0px;
   align-items: center;
   justify-items: center;
@@ -112,4 +112,105 @@
 .promo-error-text {
   color: var(--promo_price_color);
   padding: 10px 0;
+}
+
+@media (max-width: 870px) {
+  .main-shoe-cart-item {
+    grid-column-gap: 5px;
+  }
+}
+
+@media (max-width: 665px) {
+  .main-shoe-cart-item {
+    font-size: 14px;
+    grid-template-columns: 100px 100px 50px 70px 55px 50px;
+  }
+  .main-shoe-cart-item {
+    display: grid;
+    padding-bottom: 5px;
+    border-bottom: 1px solid var(--border_color);
+  }
+
+  .main-shoe-cart-item-name {
+    text-align: center;
+  }
+
+  .main-shoe-cart-item-size,
+  .main-shoe-cart-item-price {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 470px) {
+  .main-shoe-cart-item {
+    width: 300px;
+    font-size: 20px;
+    grid-template-columns: inherit;
+    grid-row-gap: 10px;
+  }
+
+  .main-shoe-cart-item-img {
+    max-width: 150px;
+  }
+
+  .main-shoe-cart-item-size,
+  .main-shoe-cart-item-price {
+    font-size: 18px;
+  }
+
+  .main-shoe-cart-item-quantity-wrapper {
+    gap: 30px;
+  }
+
+  .main-shoe-cart-item-quantity {
+    font-size: 28px;
+  }
+
+  .quantity-button {
+    padding: 10px 20px;
+  }
+
+  .button-delete {
+    max-width: 150px;
+    padding: 10px 20px;
+  }
+
+  .main-promo-input {
+    width: 200px;
+  }
+}
+
+@media (max-width: 320px) {
+  .main-shoe-cart-item {
+    width: 250px;
+    font-size: 16px;
+    grid-template-columns: inherit;
+    grid-row-gap: 5px;
+  }
+
+  .main-shoe-cart-item-size,
+  .main-shoe-cart-item-price {
+    font-size: 14px;
+  }
+
+  .main-shoe-cart-item-quantity-wrapper {
+    gap: 20px;
+  }
+
+  .main-shoe-cart-item-quantity {
+    font-size: 24px;
+  }
+
+  .quantity-button {
+    padding: 5px 15px;
+  }
+
+  .button-delete {
+    max-width: 150px;
+    padding: 5px 15px;
+  }
+
+  .main-promo-input {
+    width: 150px;
+  }
 }

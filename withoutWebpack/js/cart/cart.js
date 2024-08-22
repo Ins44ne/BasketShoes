@@ -204,6 +204,11 @@ document.addEventListener('DOMContentLoaded', async function () {
   const promoBlock = document.createElement('div')
   promoBlock.classList.add('main-promo-wrapper')
 
+  const promoText = document.createElement('div')
+  promoText.classList.add('main-promo-text-text')
+  promoText.innerText = 'Promocode:'
+  promoBlock.appendChild(promoText)
+
   const promoInputBlock = document.createElement('div')
   promoInputBlock.classList.add('main-promo-input-wrapper')
   promoBlock.appendChild(promoInputBlock)
@@ -269,6 +274,9 @@ document.addEventListener('DOMContentLoaded', async function () {
       errorText.classList.add('promo-error-text')
       errorText.textContent = 'Invalid promo code'
       promoTextBlock.appendChild(errorText)
+      if (promoUsed) {
+        showAppliedButton()
+      }
     }
   })
 
