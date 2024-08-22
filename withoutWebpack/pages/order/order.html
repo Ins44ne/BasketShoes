@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Teko:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/reset.css">
+    <link rel="stylesheet" href="../../css/const.css">
+    <link rel="stylesheet" href="../../css/hovers_animations.css">
+    <link rel="stylesheet" href="../../css/header.css">
+    <link rel="stylesheet" href="../../css/footer.css">
+    <link rel="stylesheet" href="../../css/order.css">
+    <title>Order</title>
+</head>
+
+<body>
+    <header id="header">
+    </header>
+    <main id="main">
+        <div class="main-wrapper">
+            <div class="order-form">
+                <h2>Placing an order</h2>
+                <form id="orderForm" action="https://webhook.site/ab58ef70-ccd5-4fdc-8477-b1b719bb56cb" method="POST">
+
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                    <div class="error-message" id="nameError">The name can only contain the letters Aa-Zz.</div>
+
+                    <label for="phone">Phone:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                    <div class="error-message" id="phoneError">The phone number must start with "+" and contain only
+                        numbers..
+                    </div>
+
+                    <label for="city">City:</label>
+                    <input type="text" id="city" name="city" required>
+                    <div class="error-message" id="cityError">The city can only contain the letters Aa-Zz.</div>
+
+                    <label for="street">Street:</label>
+                    <input type="text" id="street" name="street" required>
+                    <div class="error-message" id="streetError">The street can only contain the letters Aa-Zz and
+                        numbers.</div>
+
+                    <label for="house">House:</label>
+                    <input type="text" id="house" name="house" required>
+                    <div class="error-message" id="houseError">The house must contain numbers and one letter Aa-Zz.
+                    </div>
+
+                    <label for="entrance">Entrance:</label>
+                    <input type="text" id="entrance" name="entrance" required>
+                    <div class="error-message" id="entranceError">The entrance must contain up to 3 digits.</div>
+
+                    <label for="floor">Floor:</label>
+                    <input type="text" id="floor" name="floor" required>
+                    <div class="error-message" id="floorError">Floor must contain up to 3 digits.</div>
+
+                    <label for="comments">Comments to the order:</label>
+                    <textarea id="comments" name="comments"></textarea>
+                    <div class="error-message" id="commentsError">Comments can only contain letters Aa-Zz.</div>
+
+                    <div class="radio-group">
+                        <label>Payment:</label>
+                        <div class="radio-wrapper">
+                            <input type="radio" id="card" name="payment" value="card" checked>
+                            <label for="card">Card</label>
+                        </div>
+                        <div class="radio-wrapper">
+                            <input type="radio" id="cash" name="payment" value="cash">
+                            <label for="cash">Cash</label>
+                        </div>
+                    </div>
+
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                    <div class="error-message" id="emailError">Please enter a valid email address.</div>
+
+                    <button type="submit" class="button button-submit">Place an order</button>
+                </form>
+            </div>
+    </main>
+    <footer id="footer"></footer>
+    <div class="footer-under">
+    </div>
+    <script type="module" src="../../js/components/loaderHTML.js"></script>
+    <script type="module" src="../../js/order/order.js"></script>
+</body>
+
+</html>
