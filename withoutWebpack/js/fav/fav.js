@@ -7,7 +7,9 @@ document.addEventListener('DOMContentLoaded', async function () {
 
   const itemShoesBlock = document.querySelector('.main-wrapper')
 
-  favItems.forEach((itemId) => {
+  favItems.forEach((item) => {
+    const itemId = item.itemId
+
     dataArray.forEach((data) => {
       Object.values(data).forEach((shoes) => {
         shoes.forEach((shoe) => {
@@ -58,13 +60,28 @@ document.addEventListener('DOMContentLoaded', async function () {
               parentElement.remove()
 
               let favItems = JSON.parse(localStorage.getItem('fav')) || []
-              const updatedFavItems = favItems.filter((id) => id !== itemId)
+              const updatedFavItems = favItems.filter(
+                (item) => item.itemId !== itemId
+              )
               localStorage.setItem('fav', JSON.stringify(updatedFavItems))
             })
 
             itemShoesBlock.appendChild(shoeItem)
           }
         })
+      })
+    })
+
+    const items = document.querySelectorAll('.main-shoe-fav-item')
+    items.forEach(function (item) {
+      item.addEventListener('click', function () {
+        const itemId = this.id
+        window.location.href = `../../pages/itemPage/itemPage.html?id=${itemId}`
+      })
+      const deleteButton = item.querySelector('.button-delete')
+      deleteButton.addEventListener('click', function (event) {
+        event.stopPropagation()
+        item.remove()
       })
     })
   })
