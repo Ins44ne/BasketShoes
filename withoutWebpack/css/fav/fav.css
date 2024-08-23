@@ -1,0 +1,31 @@
+.main-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 3fr));
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  width: 95%;
+  margin: 0 auto;
+}
+
+.main-shoe-fav-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  width: 300px;
+  padding-bottom: 5px;
+  border: 3px solid var(--border_color);
+  border-radius: 20px;
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+.main-shoe-fav-item-img {
+  max-width: 200px;
+}
+
+.button-delete {
+  width: 90%;
+  z-index: 100;
+}

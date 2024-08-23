@@ -23,12 +23,10 @@
   border: 1px solid #ccc;
   border-radius: 4px;
 }
-
 .order-form textarea {
   height: 100px;
   resize: vertical;
 }
-
 .radio-wrapper {
   display: flex;
   flex-direction: row;
@@ -40,8 +38,33 @@
   font-weight: normal;
   margin-right: 10px;
 }
+.order-form .radio-group .radio-group-group-wrapper > label {
+  font-weight: bold;
+}
 .order-form .radio-group input {
   margin-right: 5px;
+}
+.radio-group {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.radio-group-price-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+#amount {
+  width: 120px;
+  font-size: 22px;
+  text-align: center;
+  background-color: inherit;
+  border: none;
+}
+.order-form .radio-group-price-wrapper .radio-group-price-text {
+  font-weight: bold;
+  font-size: 18px;
 }
 .order-form button {
   width: 100%;
@@ -63,5 +86,8 @@
   color: var(--promo_price_color);
   font-size: 12px;
   margin-bottom: 15px;
+  display: none;
+}
+.goods-wrapper {
   display: none;
 }

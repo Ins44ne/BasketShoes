@@ -1,0 +1,80 @@
+@media (hover: hover) and (pointer: fine) {
+  .button:hover {
+    cursor: pointer;
+    color: var(--text_color1);
+    border-color: var(--button_color);
+    background-color: var(--border_color);
+    transition: 0.7s all;
+  }
+
+  .main-slogan-image:hover img {
+    transform: rotateY(15deg) rotateX(15deg);
+  }
+
+  #facebook:hover #Vector,
+  #instagram:hover #Vector,
+  #linkedIn:hover #Vector,
+  #x:hover #Vector,
+  #youtube:hover #Vector {
+    fill: var(--border_backgr_color);
+  }
+
+  #cart:hover #Vector,
+  #fav:hover #Vector,
+  #account:hover #Vector {
+    stroke: var(--border_backgr_color);
+  }
+
+  .footer-contacts-phone:hover,
+  .footer-contacts-mail:hover {
+    color: var(--border_backgr_color);
+  }
+
+  @keyframes opacity {
+    0% {
+      opacity: 0.1;
+    }
+    50% {
+      opacity: 0.7;
+    }
+    100% {
+      opacity: 0.1;
+    }
+  }
+
+  .svg_animate {
+    animation-name: opacity;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+  }
+
+  .animate-svg-1 {
+    animation-delay: 8s;
+  }
+  .animate-svg-2 {
+    animation-delay: 4s;
+  }
+
+  /*catalog*/
+
+  .main-players-item:hover:after,
+  .main-players-item:focus:after {
+    width: 100%;
+  }
+
+  .main-shoes-field-nav-filters-sizes-item:not(.chosen):hover,
+  .main-shoe-info-size-item:not(.chosen):hover {
+    color: var(--text_color1);
+    border-color: var(--button_color);
+    background-color: var(--border_color);
+    transition: 0.7s all;
+  }
+
+  .button_fav:hover,
+  .main-shoe-size-table-button-inch:hover,
+  .main-shoe-size-table-button-cm:hover {
+    border: 3px solid var(--text_color2);
+    background-color: var(--promo_price_color);
+    color: var(--text_color2);
+  }
+}

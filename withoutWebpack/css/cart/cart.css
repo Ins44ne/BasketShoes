@@ -21,6 +21,11 @@
 
 .main-shoe-cart-item-img {
   max-width: 100px;
+  cursor: pointer;
+}
+
+.main-shoe-cart-item-name {
+  cursor: pointer;
 }
 
 .main-shoe-cart-item-quantity-wrapper {

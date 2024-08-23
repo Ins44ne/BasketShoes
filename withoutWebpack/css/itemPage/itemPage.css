@@ -49,6 +49,7 @@
   display: flex;
   flex-direction: column;
   gap: 20px;
+  max-width: 330px;
 }
 
 .main-shoe-info-price-wrapper,
@@ -163,7 +164,6 @@
   .main-shoe-wrapper,
   .main-shoe-images-wrapper {
     flex-direction: column;
-    align-items: flex-start;
     gap: 3vw;
   }
 
@@ -204,6 +204,13 @@
 
   .main-shoe-images-image-wrapper {
     max-width: 500px;
+    width: 95%;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 400px) {
+  .main-shoe-wrapper {
     width: 95%;
     margin: 0 auto;
   }

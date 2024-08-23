@@ -12,7 +12,7 @@
 
 @font-face {
   font-family: 'CabinetGroteskComplete';
-  src: url('../fonts/CabinetGrotesk_Complete/Fonts/TTF/CabinetGrotesk-Variable.ttf')
+  src: url('../../fonts/CabinetGrotesk_Complete/Fonts/TTF/CabinetGrotesk-Variable.ttf')
     format('truetype');
   font-style: normal;
   font-weight: 400;
@@ -20,7 +20,7 @@
 
 @font-face {
   font-family: 'CabinetGroteskComplete';
-  src: url('../fonts/CabinetGrotesk_Complete/Fonts/OTF/CabinetGrotesk-Bold.otf')
+  src: url('../../fonts/CabinetGrotesk_Complete/Fonts/OTF/CabinetGrotesk-Bold.otf')
     format('opentype');
   font-style: normal;
   font-weight: 700;
@@ -28,7 +28,7 @@
 
 @font-face {
   font-family: 'CabinetGroteskComplete';
-  src: url('../fonts/CabinetGrotesk_Complete/Fonts/OTF/CabinetGrotesk-Extrabold.otf')
+  src: url('../../fonts/CabinetGrotesk_Complete/Fonts/OTF/CabinetGrotesk-Extrabold.otf')
     format('opentype');
   font-style: normal;
   font-weight: 900;
@@ -49,6 +49,22 @@ body {
 #main {
   margin-top: 120px;
   flex: 1;
+}
+
+.cart-count {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 48px;
+  right: 0;
+  background-color: var(--promo_price_color);
+  color: var(--text_color2);
+  border-radius: 50%;
+  font-size: 12px;
+  font-weight: bold;
 }
 
 .button {
@@ -104,12 +120,45 @@ body {
 }
 
 .service-alert {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 100px;
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: var(--promo_price_color);
-  padding: 60px;
+  background-color: var(--border_color);
+  color: var(--text_color2);
+  border: 2px solid var(--text_color1);
   border-radius: 15px;
   z-index: 1000;
+}
+
+#scrollUp {
+  position: fixed;
+  right: 5%;
+  bottom: 20px;
+  width: 50px;
+  height: 50px;
+  background-color: var(--button_color);
+  color: var(--text_color2);
+  text-align: center;
+  line-height: 50px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 24px;
+  z-index: 1000;
+}
+
+.chosenPlayer {
+  border-bottom: 2px solid var(--border_backgr_color);
+}
+
+@media (max-width: 400px) {
+  .service-alert {
+    width: 150px;
+    height: 100px;
+  }
 }

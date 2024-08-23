@@ -45,3 +45,9 @@
 .header-menu-account-login {
   cursor: pointer;
 }
+
+@media (max-width: 360px) {
+  .header-promo {
+    font-size: 12px;
+  }
+}
