@@ -168,6 +168,15 @@ document.addEventListener('DOMContentLoaded', function () {
     addSizeFilterEventListeners()
   }
 
+  function showReset(bool) {
+    const resetButton = document.getElementById('button-reset')
+    if (bool) {
+      resetButton.style.display = 'block'
+    } else {
+      resetButton.style.display = 'none'
+    }
+  }
+
   function resetShoes(playerId, sortOrder = null) {
     const selectedColors = Array.from(
       document.querySelectorAll(
@@ -186,6 +195,9 @@ document.addEventListener('DOMContentLoaded', function () {
     const playerBlocks = document.querySelectorAll('.main-players-item')
     playerBlocks.forEach((block) => {
       block.addEventListener('click', () => {
+        playerBlocks.forEach((item) => item.classList.remove('chosenPlayer'))
+        block.classList.add('chosenPlayer')
+        showReset(true)
         resetShoes(block.id)
       })
     })
@@ -221,6 +233,7 @@ document.addEventListener('DOMContentLoaded', function () {
   function addSortEventListeners() {
     const highLowButton = document.getElementById('highLow')
     const lowHighButton = document.getElementById('lowHigh')
+    const resetButton = document.getElementById('button-reset')
 
     highLowButton.addEventListener('click', () => {
       resetShoes(null, 'highLow')
@@ -228,6 +241,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
     lowHighButton.addEventListener('click', () => {
       resetShoes(null, 'lowHigh')
+    })
+
+    resetButton.addEventListener('click', () => {
+      showReset(false)
+      resetShoes()
     })
   }
 
