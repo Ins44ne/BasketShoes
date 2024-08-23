@@ -7,12 +7,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Teko:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../../css/reset.css">
-    <link rel="stylesheet" href="../../css/const.css">
-    <link rel="stylesheet" href="../../css/hovers_animations.css">
-    <link rel="stylesheet" href="../../css/header.css">
-    <link rel="stylesheet" href="../../css/footer.css">
-    <link rel="stylesheet" href="../../css/catalog.css">
+    <link rel="stylesheet" href="../../css/const_hovers/reset.css">
+    <link rel="stylesheet" href="../../css/const_hovers/const.css">
+    <link rel="stylesheet" href="../../css/const_hovers/hovers_animations.css">
+    <link rel="stylesheet" href="../../css/header/header.css">
+    <link rel="stylesheet" href="../../css/footer/footer.css">
+    <link rel="stylesheet" href="../../css/catalog/catalog.css">
     <title>Catalog</title>
 </head>
 
@@ -39,6 +39,10 @@
                 <div class="main-shoes-field-wrapper">
                     <div class="main-shoes-field-nav-wrapper">
                         <div class="main-shoes-field-nav-players-wrapper" id="players-list"></div>
+                        <div class="main-shoes-field-nav-players-reset-wrapper" id="reset-player">
+                            <button class="main-shoes-field-nav-players-reset-button button button-reset"
+                                id="button-reset">Reset</button>
+                        </div>
                         <div class="main-shoes-field-nav-filters-wrapper">
                             <div class="main-shoes-field-nav-filters-colors-wrapper">
                                 <div class="main-shoes-field-nav-filters-colors-items-switcher filter"
@@ -70,6 +74,7 @@
     <div class="footer-under">
     </div>
     <script type="module" src="../../js/components/loaderHTML.js"></script>
+    <script type="module" src="../../js/components/scrollUp.js"></script>
     <script type="module" src="../../js/catalog/playersList.js"></script>
     <script type="module" src="../../js/catalog/renderCatalog.js"></script>
     <script type="module" src="../../js/catalog/catalogSwitchers.js"></script>
