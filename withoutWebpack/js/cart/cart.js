@@ -17,6 +17,26 @@ document.addEventListener('DOMContentLoaded', async function () {
     totalSummElement.innerText = `$ ${totalSumm.toFixed(2)}`
   }
 
+  function minusCart(bool, quant) {
+    let cartCount = parseInt(localStorage.getItem('cartCount')) || 0
+    if (bool) {
+      if (quant === 1) {
+        cartCount--
+      } else {
+        cartCount -= quant
+      }
+    } else {
+      cartCount++
+    }
+    localStorage.setItem('cartCount', cartCount)
+    const cartCountElement = document.getElementById('cart-count')
+    if (cartCountElement) {
+      cartCountElement.textContent = cartCount
+    } else {
+      console.error('Element with id="cart-count" not found')
+    }
+  }
+
   cartItems.forEach((cartItem) => {
     dataArray.forEach((data) => {
       Object.values(data).forEach((shoes) => {
@@ -32,10 +52,22 @@ document.addEventListener('DOMContentLoaded', async function () {
             shoeImage.alt = `${shoe.shoe_name}`
             shoeItem.appendChild(shoeImage)
 
+            shoeImage.addEventListener('click', function () {
+              const parentElement = this.parentElement
+              const itemId = parentElement.id.split('-')[0]
+              window.location.href = `../../pages/itemPage/itemPage.html?id=${itemId}`
+            })
+
             const shoeName = document.createElement('h3')
             shoeName.textContent = shoe.shoe_name
             shoeName.classList.add('main-shoe-cart-item-name')
             shoeItem.appendChild(shoeName)
+
+            shoeName.addEventListener('click', function () {
+              const parentElement = this.parentElement
+              const itemId = parentElement.id.split('-')[0]
+              window.location.href = `../../pages/itemPage/itemPage.html?id=${itemId}`
+            })
 
             const shoeSize = document.createElement('p')
             shoeSize.textContent = `Size: ${cartItem.size}`
@@ -132,6 +164,7 @@ document.addEventListener('DOMContentLoaded', async function () {
                 shoeItem.remove()
               }
               updateTotalSumm()
+              minusCart(true, 1)
             })
 
             buttonPlus.addEventListener('click', function () {
@@ -159,6 +192,7 @@ document.addEventListener('DOMContentLoaded', async function () {
                 ).quantity
               }`
               updateTotalSumm()
+              minusCart(false, 1)
             })
 
             buttonDelete.addEventListener('click', function () {
@@ -176,6 +210,7 @@ document.addEventListener('DOMContentLoaded', async function () {
               localStorage.setItem('cart', JSON.stringify(updatedCartItems))
               parentElement.remove()
               updateTotalSumm()
+              minusCart(true, currentQuantity)
             })
 
             itemShoesBlock.appendChild(shoeItem)
@@ -292,7 +327,9 @@ document.addEventListener('DOMContentLoaded', async function () {
   orderButton.innerHTML = 'Order'
 
   orderButton.addEventListener('click', function () {
-    window.location.href = `../order/order.html?Summ=${totalSumm.toFixed(2)}`
+    const cartSumm = totalSumm.toFixed(2)
+    localStorage.setItem('cartSumm', cartSumm)
+    window.location.href = `../order/order.html?Summ=${cartSumm}`
   })
 
   orderBlock.appendChild(orderButton)
