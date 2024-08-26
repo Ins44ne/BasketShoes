@@ -7,12 +7,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Teko:wght@700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../../css/reset.css">
-    <link rel="stylesheet" href="../../css/const.css">
-    <link rel="stylesheet" href="../../css/hovers_animations.css">
-    <link rel="stylesheet" href="../../css/header.css">
-    <link rel="stylesheet" href="../../css/footer.css">
-    <link rel="stylesheet" href="../../css/order.css">
+    <link rel="stylesheet" href="../../css/const_hovers/reset.css">
+    <link rel="stylesheet" href="../../css/const_hovers/const.css">
+    <link rel="stylesheet" href="../../css/const_hovers/hovers_animations.css">
+    <link rel="stylesheet" href="../../css/header/header.css">
+    <link rel="stylesheet" href="../../css/footer/footer.css">
+    <link rel="stylesheet" href="../../css/order/order.css">
     <title>Order</title>
 </head>
 
@@ -34,6 +34,10 @@
                     <div class="error-message" id="phoneError">The phone number must start with "+" and contain only
                         numbers..
                     </div>
+
+                    <label for="email">E-mail:</label>
+                    <input type="email" id="email" name="email" required>
+                    <div class="error-message" id="emailError">Please enter a valid email address.</div>
 
                     <label for="city">City:</label>
                     <input type="text" id="city" name="city" required>
@@ -62,22 +66,30 @@
                     <div class="error-message" id="commentsError">Comments can only contain letters Aa-Zz.</div>
 
                     <div class="radio-group">
-                        <label>Payment:</label>
-                        <div class="radio-wrapper">
-                            <input type="radio" id="card" name="payment" value="card" checked>
-                            <label for="card">Card</label>
+                        <div class="radio-group-group-wrapper">
+                            <label>Payment:</label>
+                            <div class="radio-wrapper">
+                                <input type="radio" id="card" name="payment" value="card" checked>
+                                <label for="card">Card</label>
+                            </div>
+                            <div class="radio-wrapper">
+                                <input type="radio" id="cash" name="payment" value="cash">
+                                <label for="cash">Cash</label>
+                            </div>
                         </div>
-                        <div class="radio-wrapper">
-                            <input type="radio" id="cash" name="payment" value="cash">
-                            <label for="cash">Cash</label>
+                        <div class="radio-group-price-wrapper">
+                            <label for="amount" class="radio-group-price-text">Order amount</label>
+                            <input type="text" name="amount" id="amount" class="radio-group-price-amount"
+                                readonly></input>
                         </div>
                     </div>
 
-                    <label for="email">E-mail:</label>
-                    <input type="email" id="email" name="email" required>
-                    <div class="error-message" id="emailError">Please enter a valid email address.</div>
+                    <div class="goods-wrapper">
+                        <label for="goods" class="goods-label">Order goods</label>
+                        <textarea name="goods" id="goods" class="goods"></textarea>
+                    </div>
 
-                    <button type="submit" class="button button-submit">Place an order</button>
+                    <button type="submit" class="button button-submit" id="button-submit">Place an order</button>
                 </form>
             </div>
     </main>
@@ -85,6 +97,7 @@
     <div class="footer-under">
     </div>
     <script type="module" src="../../js/components/loaderHTML.js"></script>
+    <script type="module" src="../../js/components/scrollUp.js"></script>
     <script type="module" src="../../js/order/order.js"></script>
 </body>
 
