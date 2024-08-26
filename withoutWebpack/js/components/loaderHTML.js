@@ -55,6 +55,16 @@ document.addEventListener('DOMContentLoaded', () => {
     } else {
       console.error('Element with id="cart" not found')
     }
+    if (cartElement) {
+      const cartCountElement = document.getElementById('cart-count')
+      const storedCount = localStorage.getItem('cartCount') || 0
+      if (storedCount > 0) {
+        cartCountElement.textContent = storedCount
+        cartCountElement.style.display = 'flex'
+      }
+    } else {
+      console.error('Element with id="cart" not found')
+    }
   })
 
   loadSvg('img/icons/header/account/cart.svg', 'cart')
