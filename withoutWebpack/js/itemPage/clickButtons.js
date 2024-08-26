@@ -1,19 +1,25 @@
 import { itemId } from './renderShoe.js'
 
-function addToStorage(key, itemId, selectedSizes) {
+function addToStorage(key, itemId, selectedSizes = null) {
   let items = JSON.parse(localStorage.getItem(key)) || []
 
-  selectedSizes.forEach((size) => {
-    const existingItem = items.find(
-      (item) => item.itemId === itemId && item.size === size
-    )
-
-    if (existingItem) {
-      existingItem.quantity += 1
-    } else {
-      items.push({ itemId, size, quantity: 1 })
+  if (selectedSizes === null) {
+    if (!items.some((item) => item.itemId === itemId)) {
+      items.push({ itemId })
     }
-  })
+  } else {
+    selectedSizes.forEach((size) => {
+      const existingItem = items.find(
+        (item) => item.itemId === itemId && item.size === size
+      )
+
+      if (existingItem) {
+        existingItem.quantity += 1
+      } else {
+        items.push({ itemId, size, quantity: 1 })
+      }
+    })
+  }
 
   localStorage.setItem(key, JSON.stringify(items))
 }
@@ -62,8 +68,20 @@ function showWarning(cartBool, favBool) {
   }, 2000)
 }
 
+function addToCart(quantity) {
+  let cartCount = parseInt(localStorage.getItem('cartCount')) || 0
+  cartCount += quantity
+  localStorage.setItem('cartCount', cartCount)
+  const cartCountElement = document.getElementById('cart-count')
+  if (cartCountElement) {
+    cartCountElement.textContent = cartCount
+  } else {
+    console.error('Element with id="cart-count" not found')
+  }
+}
+
 document.getElementById('button-fav').addEventListener('click', function () {
-  addToStorage('fav', itemId, [])
+  addToStorage('fav', itemId, null)
   showWarning('', true)
 })
 
@@ -71,6 +89,7 @@ document.getElementById('button-cart').addEventListener('click', function () {
   if (checkSizeSelection()) {
     const selectedSizes = getSelectedSizes()
     addToStorage('cart', itemId, selectedSizes)
+    addToCart(selectedSizes.length)
     showWarning(true)
   } else {
     showWarning(false)
